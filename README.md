@@ -1,5 +1,5 @@
 # How to set up a Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop 21.04
-This tutorial describes how to install and run a Bitcoin Cash Node on a Raspberry Pi 4 running the 64-bit Ubuntu Desktop 21.04. This setup focuses on uses the Bitcoin Cash Node graphical user interface (GUI) so that we can visualize processes on the blockchain and our Bitcoin Cash wallet transactions.<br><br>
+This tutorial describes how to install and run a [Bitcoin Cash Node](https://bitcoincashnode.org/) on a Raspberry Pi 4 running the 64-bit Ubuntu Desktop 21.04. This setup focuses on uses the Bitcoin Cash Node graphical user interface (GUI) so that we can visualize processes on the blockchain and our Bitcoin Cash wallet transactions.<br><br>
 These instructions are intended for those who have basic knowledge of the Ubuntu environment and familiarity with Linux commands. Therefore, this article will not describe steps unrelated to setting up the Bitcoin Cash Node.<br>
 
 ## Contents
@@ -42,15 +42,15 @@ Bitcoin Cash Node is a node and wallet implementation for the Bitcoin Cash netwo
 > **Note:** The Bitcoin Cash blockchain is approximately **164 GB** as of **June 1, 2021**, and is only expected to grow. Be sure your SSD is large enough to accommodate the growing blockchain if you want to keep verifying transactions for the foreseeable future on your Pi.<br>
 
 ## Preparing your Raspberry Pi
-> **Note:** This tutorial assumes that you have already installed and configured Ubuntu Desktop 21.04 on your Raspberry Pi to your liking and have mounted the SSD to your Pi.
-> * **For details on installing the 64-bit Ubuntu Desktop 21.04 on your Raspberry Pi**, please see How to install Ubuntu Desktop on Raspberry Pi 4.
-> * **For details on automounting your SSD in Ubuntu**, please see How to properly automount a drive in Ubuntu Linux.
->   * Be sure to give your SSD a unique name since we that's where the Bitcoin Cash Node will be installed.
+This tutorial assumes that you have already installed and configured Ubuntu Desktop 21.04 on your Raspberry Pi to your liking and have mounted the SSD to your Pi.
+* **For details on installing the 64-bit Ubuntu Desktop 21.04 on your Raspberry Pi**, please see [How to install Ubuntu Desktop on Raspberry Pi 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview).
+* **For details on automounting your SSD in Ubuntu**, please see [How to properly automount a drive in Ubuntu Linux](https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/).
+  * Be sure to give your SSD a unique name since we that's where the Bitcoin Cash Node will be installed.
 
 ### Check your Ubuntu architecture
 Before we proceed, let's make sure that we're running the aarch64 version of Ubuntu on the Raspberry Pi. Run the following command in **Terminal**.<br><br>
 ```uname -m```<br><br>
-If **aarch64** is not output, please follow the instructions in How to install Ubuntu Desktop on Raspberry Pi 4 and make sure to select the 64-bit option of Ubuntu Desktop.<br>
+If **aarch64** is not output, please follow the instructions in [How to install Ubuntu Desktop on Raspberry Pi 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview) and make sure to select the 64-bit option of Ubuntu Desktop.<br>
 
 ### Update and upgrade the system
 After setting up Ubuntu Desktop 21.04 and automounting your SSD, let's update and upgrade the system by running the following commands in **Terminal**.<br><br>
@@ -60,14 +60,14 @@ After setting up Ubuntu Desktop 21.04 and automounting your SSD, let's update an
 ## Setting up Bitcoin Cash Node
 
 ### Download and extract the Bitcoin Cash Node package
-Using a web browser on your Raspberry Pi, go to the following **Download** page on the Bitcoin Cash Node website.<br><br>
+Using a web browser on your Raspberry Pi, go to the following [**Download**](https://bitcoincashnode.org/en/download.html) page on the Bitcoin Cash Node website.<br><br>
 Under **Linux**, download the **AARCH 64 (tar)** package the home directory on your mounted SSD. Downloading this compressed package should take about 1 minute.<br><br>
 DOWNLOAD PAGE SCREENSHOT WITH SAVE AS WINDOW<br><br>
 After the compressed package finishes downloading, we need to extract the compressed package.<br><br>
 To do so, let's open **Terminal** and go to the directory where we downloaded the package to. Be sure to replace **SSD-directory-containing-downloaded-package** in the command below with the directory where we saved the compressed package to.<br><br>
-```cd /<SSD-directory-containing-downloaded-package>```<br><br>
+```cd **SSD-directory-containing-downloaded-package**```<br><br>
 Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace **version-number-downloaded** with the version number that matches the package you downloaded.<br><br>
-```sudo tar -xvzf bitcoin-cash-node-<version-number-downloaded>-aarch64-linux-gnu.tar.gz```<br><br>
+```sudo tar -xvzf bitcoin-cash-node-**version-number-downloaded**-aarch64-linux-gnu.tar.gz```<br><br>
   
 ### Run Bitcoin Cash Node
 Now that we've extracted the Bitcoin Cash Node package, let's run the software and start downloading the transactions within the blockchain to your node.<br><br>
@@ -75,7 +75,7 @@ Now that we've extracted the Bitcoin Cash Node package, let's run the software a
 To start the Bitcoin Cash Node software, let's first go back to the home directory by running the following command in **Terminal**.<br><br>
 ```cd```<br><br>
 Then, let's run the Bitcoin Cash Node software by running the following command in Terminal. Be sure to replace **path-to-Bitcoin-Cash-Node-directory-on-SSD** in the command below with the directory where you extracted the Bitcoin Cash Node to on your SSD drive.<br><br>
-```sudo <path-to-Bitcoin-Cash-Node-directory-on-SSD>/bin/bitcoin-qt```<br><br>
+```sudo \***path-to-Bitcoin-Cash-Node-directory-on-SSD**/bin/bitcoin-qt```<br><br>
 > **Note:** By going back to the home directory first, we can see the complete directory path for starting the Bitcoin Cash Node software and easily save the command for running the software quickly if it stops running for some reason.<br><br>
 The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to.<br><br>
 SCREENSHOT OF PROMPT<br><br>
@@ -88,7 +88,7 @@ After all the blockchain transactions have finished downloading to your SSD, you
   
 ## Setting up your Bitcoin Cash wallet
 Our Bitcoin Cash wallet has already been created at this point, so let's secure it with a password and back it up.<br><br>
-> **Attention:** The instructions in this section are very important. Neglecting to secure your wallet with a password and backing it up could result in you losing the Bitcoin Cash that you receive from others in your wallet.<br>
+> **Attention:** The instructions in this section are very important. Neglecting to secure your wallet with a password and backing it up could result in you losing the Bitcoin Cash that you receive from others in your wallet.<br><br>
   
 ### Create a password for your wallet
 
