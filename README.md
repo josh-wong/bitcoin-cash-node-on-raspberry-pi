@@ -39,13 +39,13 @@ Bitcoin Cash Node is a node and wallet implementation for the Bitcoin Cash netwo
 - [ ] USB mouse (USB or Bluetooth)
 - [ ] Reliable Internet connection
 - [ ] Raspberry Pi case with a GPIO fan and heat sinks (recommended)
-> Note that the Bitcoin Cash blockchain is approximately **164 GB** as of **June 1, 2021**, and is only expected to grow. Be sure your SSD is large enough to accommodate the growing blockchain if you want to keep verifying transactions for the foreseeable future on your Pi.<br>
+> **Note:** The Bitcoin Cash blockchain is approximately **164 GB** as of **June 1, 2021**, and is only expected to grow. Be sure your SSD is large enough to accommodate the growing blockchain if you want to keep verifying transactions for the foreseeable future on your Pi.<br>
 
 ## Preparing your Raspberry Pi
-This tutorial assumes that you have already installed and configured Ubuntu Desktop 21.04 on your Raspberry Pi to your liking and have mounted the SSD to your Pi.
-* **For details on installing the 64-bit Ubuntu Desktop 21.04 on your Raspberry Pi**, please see How to install Ubuntu Desktop on Raspberry Pi 4.
-* **For details on automounting your SSD in Ubuntu**, please see How to properly automount a drive in Ubuntu Linux.
-  * Be sure to give your SSD a unique name since we that's where the Bitcoin Cash Node will be installed.
+> **Note:** This tutorial assumes that you have already installed and configured Ubuntu Desktop 21.04 on your Raspberry Pi to your liking and have mounted the SSD to your Pi.
+> * **For details on installing the 64-bit Ubuntu Desktop 21.04 on your Raspberry Pi**, please see How to install Ubuntu Desktop on Raspberry Pi 4.
+> * **For details on automounting your SSD in Ubuntu**, please see How to properly automount a drive in Ubuntu Linux.
+>   * Be sure to give your SSD a unique name since we that's where the Bitcoin Cash Node will be installed.
 
 ### Check your Ubuntu architecture
 Before we proceed, let's make sure that we're running the aarch64 version of Ubuntu on the Raspberry Pi. Run the following command in **Terminal**.<br><br>
@@ -71,12 +71,12 @@ Next, let's extract the compressed package. When running the following command i
   
 ### Run Bitcoin Cash Node
 Now that we've extracted the Bitcoin Cash Node package, let's run the software and start downloading the transactions within the blockchain to your node.<br><br>
-Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.<br><br>
+> **Note:** Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.<br><br>
 To start the Bitcoin Cash Node software, let's first go back to the home directory by running the following command in **Terminal**.<br><br>
 ```cd```<br><br>
 Then, let's run the Bitcoin Cash Node software by running the following command in Terminal. Be sure to replace **path-to-Bitcoin-Cash-Node-directory-on-SSD** in the command below with the directory where you extracted the Bitcoin Cash Node to on your SSD drive.<br><br>
 ```sudo <path-to-Bitcoin-Cash-Node-directory-on-SSD>/bin/bitcoin-qt```<br><br>
-By going back to the home directory first, we can see the complete directory path for starting the Bitcoin Cash Node software and easily save the command for running the software quickly if it stops running for some reason.<br><br>
+> **Note:** By going back to the home directory first, we can see the complete directory path for starting the Bitcoin Cash Node software and easily save the command for running the software quickly if it stops running for some reason.<br><br>
 The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to.<br><br>
 SCREENSHOT OF PROMPT<br><br>
 Open a new **Terminal** window, let's create a new directory to store the blockchain data. Run the following command will create a directory called "blockchain-data" in the Bitcoin Cash Node directory on our SSD.<br><br>
@@ -88,7 +88,7 @@ After all the blockchain transactions have finished downloading to your SSD, you
   
 ## Setting up your Bitcoin Cash wallet
 Our Bitcoin Cash wallet has already been created at this point, so let's secure it with a password and back it up.<br><br>
-> The instructions in this section are very important. Neglecting to secure your wallet with a password and backing it up could result in you losing the Bitcoin Cash that you receive from others in your wallet.<br>
+> **Attention:** The instructions in this section are very important. Neglecting to secure your wallet with a password and backing it up could result in you losing the Bitcoin Cash that you receive from others in your wallet.<br>
   
 ### Create a password for your wallet
 
