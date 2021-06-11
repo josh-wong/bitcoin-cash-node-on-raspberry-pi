@@ -34,10 +34,10 @@ Bitcoin Cash Node is a node and wallet implementation for the Bitcoin Cash netwo
 
 ## Preparing your Raspberry Pi
 
-***Note:** This tutorial assumes that you have already installed and configured Ubuntu Desktop 21.04 on your Raspberry Pi to your liking and have mounted the SSD to your Pi.
+***Note:** This tutorial assumes that you have already installed and configured Ubuntu Desktop 21.04 on your Raspberry Pi to your liking and have mounted the SSD to your Pi.*
 
 1. **For details on installing the 64-bit Ubuntu Desktop 21.04 on your Raspberry Pi**, please see [How to install Ubuntu Desktop on Raspberry Pi 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview).
-2. **For details on automounting your SSD in Ubuntu**, please see [How to properly automount a drive in Ubuntu Linux](https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/).*
+2. **For details on automounting your SSD in Ubuntu**, please see [How to properly automount a drive in Ubuntu Linux](https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/).
 
 ### Check your Ubuntu architecture
 
@@ -68,13 +68,13 @@ Under **Linux**, download the **AARCH 64 (tar)** package the home directory on y
 
 After the compressed package finishes downloading, let's extract the compressed package. 
 
-To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace "<SSD-directory-containing-downloaded-package>" in the command below with the directory where you saved the compressed package to.
+To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace **"SSD-directory-containing-downloaded-package"** in the command below with the directory where you saved the compressed package to.
 
-`cd /<SSD-directory-containing-downloaded-package>`
+`cd /"SSD-directory-containing-downloaded-package"`
 
-Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace "<version-number-downloaded>" with the version number that matches the package you downloaded.
+Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace **"version-number-downloaded"** with the version number that matches the package you downloaded.
 
-`sudo tar -xvzf bitcoin-cash-node-<version-number-downloaded>-aarch64-linux-gnu.tar.gz`
+`sudo tar -xvzf bitcoin-cash-node-"version-number-downloaded"-aarch64-linux-gnu.tar.gz`
 
 While we're in this directory, let's create a new directory to store the blockchain data and keep things tidy. In **Terminal**, run the following command.
 
