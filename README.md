@@ -165,3 +165,9 @@ When the Bitcoin Cash has moved to your available balance, it is in your possess
 You now have a full Bitcoin Cash Node on your Raspberry Pi 4 running Ubuntu Desktop 21.04. 
 
 With this full node, you are contributing to the Bitcoin Cash ecosystem by validating transactions and promoting the security and decentralization of the network. Additionally, with Bitcoin Cash stored in your wallet on the node, you have essentially become your own bank by owning your private keys and therefore your wallet.
+
+If you find these instructions helpful, please let me know. I'd really like to hear your experience setting up a Bitcoin Cash Node!
+
+And if you're feeling extra generous, I accept donations in Bitcoin Cash. Your donation goes directly into the wallet that I'm hosting along with the Bitcoin Cash Node I set up. Your donation will be used to maintain this node and fund other blockchain-related projects.
+
+<img src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/bitcoin_cash_qr_code_chickensandwich.png?raw=true" style="zoom: 50%;" />
