@@ -30,14 +30,13 @@ Bitcoin Cash Node is a node and wallet implementation for the Bitcoin Cash netwo
   - Raspberry Pi case with a GPIO fan and heat sinks (recommended)
 - Reliable Internet connection
 
-***Note:** For the data associated with the Bitcoin Cash blockchain, you should reserve at least 200 GB. Be sure your SSD is large enough to accommodate the growing blockchain if you want to keep verifying transactions for the foreseeable future on your Raspberry Pi.*
+> **Note:** For the data associated with the Bitcoin Cash blockchain, you should reserve at least 200 GB. Be sure your SSD is large enough to accommodate the growing blockchain if you want to keep verifying transactions for the foreseeable future on your Raspberry Pi.
 
 ## Preparing your Raspberry Pi
 
-***Note:** This tutorial assumes that you have already installed and configured Ubuntu Desktop 21.04 on your Raspberry Pi to your liking and have mounted the SSD to your Pi.*
-
-1. ***For details on installing the 64-bit Ubuntu Desktop 21.04 on your Raspberry Pi**, please see [How to install Ubuntu Desktop on Raspberry Pi 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview).*
-2. ***For details on automounting your SSD in Ubuntu**, please see [How to properly automount a drive in Ubuntu Linux](https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/).*
+> **Note:** This tutorial assumes that you have already installed and configured Ubuntu Desktop 21.04 on your Raspberry Pi to your liking and have mounted the SSD to your Pi.*
+> 1. **For details on installing the 64-bit Ubuntu Desktop 21.04 on your Raspberry Pi**, please see [How to install Ubuntu Desktop on Raspberry Pi 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview).
+> 2. **For details on automounting your SSD in Ubuntu**, please see [How to properly automount a drive in Ubuntu Linux](https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/).
 
 ### Check your Ubuntu architecture
 
@@ -84,7 +83,7 @@ While we're in this directory, let's create a new directory to store the blockch
 
 Now that we've extracted the Bitcoin Cash Node package, let's run the software and start downloading the transactions within the blockchain to your node.
 
-***Note:** Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.*
+> **Note:** Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.
 
 To start the Bitcoin Cash Node software, run the following command in **Terminal**.
 
@@ -108,7 +107,7 @@ After all the Bitcoin Cash transactions have finished downloading to your SSD, y
 
 To monitor inbound and outbound traffic on your node, click **Window** in the menu bar and choose **Network Traffic**. From here, you can see how much data is being transferred to and from your node. 
 
-***Note:** The "Received" and "Sent" under "Totals" will reset if you restart the Bitcoin Cash Node software. Additionally, the network traffic will reset if you move the slider below the graph.*
+> **Note:** The "Received" and "Sent" under "Totals" will reset if you restart the Bitcoin Cash Node software. Additionally, the network traffic will reset if you move the slider below the graph.
 
 <img src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/images/bitcoin_cash_node_network_traffic_30_minutes.png?raw=true.png" style="zoom:80%;" />
 
@@ -116,7 +115,7 @@ To monitor inbound and outbound traffic on your node, click **Window** in the me
 
 Your Bitcoin Cash wallet has already been created at this point, so let's secure it with a password and back it up.
 
-***Attention:** The instructions in this section are very important. Neglecting to secure your wallet with a password and backing it up could result in you losing the Bitcoin Cash that you receive from others.*
+> **Attention!:** The instructions in this section are very important. Neglecting to secure your wallet with a password and backing it up could result in you losing the Bitcoin Cash that you receive from others.
 
 ### Create a password for your wallet
 
@@ -124,7 +123,7 @@ Let's secure your wallet with a password. You will need this password to restore
 
 In the menu bar, click **Settings**, then select **Encrypt Wallet**. When the password setup window appears, enter a secure password. Enter the same password again to confirm it.
 
-***Attention:** Be sure to remember this password. Write it down and put it in a safe, for example.*
+> **Attention!:** Be sure to remember this password. Write it down and put it in a safe, for example.
 
 After you have successfully encrypted your wallet with a password, the following confirmation screen will appear. Please carefully read the notice, then click **OK**.
 
@@ -138,7 +137,7 @@ Backing up your wallet let's you restore it if the device hosting your node and 
 
 In the menu bar, click **File** and select **Backup Wallet**. When the directory window appears, choose a directory to save the wallet data (.dat) file to. If you don't have your Raspberry Pi set up to communicate with other computers on your network, save the wallet file (.dat) to your Raspberry Pi first and then immediately save it to another device for safe-keeping.
 
-***Attention:** Do not keep your wallet backup on the same device that hosts your node and wallet. If your device encounters a catastrophic failure, you will not be able to restore the wallet from the backup. Instead, save the wallet backup to a secure, reliable device or devices.*
+> **Attention!:** Do not keep your wallet backup on the same device that hosts your node and wallet. If your device encounters a catastrophic failure, you will not be able to restore the wallet from the backup. Instead, save the wallet backup to a secure, reliable device or devices.
 
 Once you have chosen a location, click **OK**.
 
