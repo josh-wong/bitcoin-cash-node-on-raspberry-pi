@@ -1,4 +1,5 @@
 site_name: How to run Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop
+site_url: https://josh-wong.github.io
 theme:
   name: material
 
@@ -10,5 +11,6 @@ nav:
     - Setting up Bitcoin Cash Node: '/installation-and-setup/03_bchn-setup.md'
     - Setting up your Bitcoin Cash wallet: '/installation-and-setup/04_wallet-setup.md'
   - Conclusion: '/installation-and-setup/05_conclusion.md'
+  - References: '/references/index.md'
   - Contributions: '/contributions/index.md'
   - Donations: '/donations/index.md'
