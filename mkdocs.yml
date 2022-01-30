@@ -1,3 +1,14 @@
-site_name: Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop
+site_name: How to run Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop
 theme:
   name: material
+
+nav:
+  - Overview: '/installation-and-setup/index.md'
+  - Prerequisites: '/installation-and-setup/01_prerequisites.md'
+  - Installing Bitcoin Cash Node:
+    - Preparing your Raspberry Pi: '/installation-and-setup/02_preparation.md'
+    - Setting up Bitcoin Cash Node: '/installation-and-setup/03_bchn-setup.md'
+    - Setting up your Bitcoin Cash wallet: '/installation-and-setup/04_wallet-setup.md'
+  - Conclusion: '/installation-and-setup/05_conclusion.md'
+  - Contributions: '/contributions/index.md'
+  - Donations: '/donations/index.md'
