@@ -12,7 +12,7 @@ Was this documentation helpful? If so, micro-donations are greatly appreciated!
 
 ## PayPal💰
 
-<form action="https://www.paypal.com/donate" method="post" target="_top">
+<form action="https://www.paypal.me/tokyojosh" method="post" target="_top">
 <input type="hidden" name="business" value="W2U8RYVMPU992" />
 <input type="hidden" name="no_recurring" value="0" />
 <input type="hidden" name="item_name" value="Appreciate your work!" />
