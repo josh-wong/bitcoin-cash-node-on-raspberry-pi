@@ -12,7 +12,7 @@ After the compressed package finishes downloading, let's move the compressed fil
 
 `sudo mv Downloads/bitcoin-cash-node-<new-version-number>-aarch64-linux-gnu.tar.gz /<SSD-directory-containing-downloaded-package>` 
 
-Next, let's go to the SSD directory by running the following command. Be sure to replace **\<SSD-directory-containing-downloaded-package\** in the command below with the directory where we saved the compressed package to.
+Next, let's go to the SSD directory by running the following command. Be sure to replace **<SSD-directory-containing-downloaded-package\>** in the command below with the directory where we saved the compressed package to.
 
  `cd /<SSD-directory-containing-downloaded-package>`
 
