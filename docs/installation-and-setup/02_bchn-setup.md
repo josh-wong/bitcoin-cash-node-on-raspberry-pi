@@ -10,11 +10,11 @@ Make sure the latest version of BCHN is selected. Under **Linux**, download the 
 
 After the compressed package finishes downloading, let's extract the compressed package. 
 
-To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace **<SSD-directory-containing-downloaded-package>** in the command below with the directory where we saved the compressed package to.
+To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace \*\*<SSD-directory-containing-downloaded-package>\*\* in the command below with the directory where we saved the compressed package to.
 
 `cd /<SSD-directory-containing-downloaded-package>`
 
-Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace **<version-number-downloaded>** with the version number that matches the package we downloaded.
+Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace \*\*<version-number-downloaded>\*\* with the version number that matches the package we downloaded.
 
 `sudo tar -xvzf bitcoin-cash-node-<version-number-downloaded>-aarch64-linux-gnu.tar.gz`
 
@@ -28,7 +28,7 @@ Now that we've extracted the Bitcoin Cash Node package, let's run the software a
 
 > **Note:** Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.
 
-To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace **<version-number-downloaded>** with the version number that matches the package we downloaded.
+To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace \*\*<version-number-downloaded>\*\* with the version number that matches the package we downloaded.
 
 `sudo bitcoin-cash-node-<version-number-downloaded>/bin/bitcoin-qt`
 
