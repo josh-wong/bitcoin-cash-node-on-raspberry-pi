@@ -8,10 +8,10 @@ theme:
     repo: fontawesome/brands/github
 
 plugins:
-  - search
+- search
   - git-revision-date-localized:
-    type: date
-    enable_creation_date: true
+      type: date
+      enable_creation_date: true
 
 theme:
   name: material
