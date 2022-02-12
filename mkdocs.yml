@@ -7,7 +7,7 @@ repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
 plugins:
   - search
   - git-revision-date-localized:
-    type: date
+    fallback_to_build_date: true
 
 theme:
   name: material
