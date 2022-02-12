@@ -13,7 +13,7 @@ In the menu bar, click **Settings**, then select **Encrypt Wallet**. When the pa
 > **Attention!:** Be sure to remember this password. Write it down and put it in a safe, for example.
 After you have successfully encrypted your wallet with a password, the following confirmation screen will appear. Please carefully read the notice, then click **OK**.
 
-<img src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/images/bitcoin_cash_node_wallet_encrypted_notice.png?raw=true" />
+![Bitcoin Cash Node wallet encrypted notice](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_wallet_encrypted_notice.png?raw=true)
 
 ## Back up your wallet
 
@@ -39,10 +39,10 @@ A window will appear that shows you a QR code for someone to scan and send you B
 
 You can now give someone the QR code or wallet address for them to send you Bitcoin Cash. After they have sent some Bitcoin Cash, the transaction will appear as "Pending" until it is validated on the blockchain.
 
-<img src="../../assets/screenshots/bitcoin_cash_node_test_receive_pending.png?raw=true" />
+![Bitcoin Cash Node test receive pending](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_test_receive_pending.png?raw=true)
 
 After a few minutes, you can see that the transaction has been validated and your Bitcoin Cash now appears as "Available" funds.
 
-<img src="../../assets/screenshots/bitcoin_cash_node_test_receive_verified.png?raw=true" />
+![Bitcoin Cash Node test receive verified](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_test_receive_verified.png?raw=true)
 
 When the Bitcoin Cash has moved to your available balance, it is in your possession and you can send it to others, make payments, or save it.
