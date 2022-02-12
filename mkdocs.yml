@@ -3,20 +3,19 @@ site_url: https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/
 
 repo_name: josh-wong/bitcoin-cash-node-on-raspberry-pi
 repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
-theme:
-  icon:
-    repo: fontawesome/brands/github
 
 plugins:
-- search
+  - search
   - git-revision-date-localized:
-      type: date
-      enable_creation_date: true
+    type: date
+    enable_creation_date: true
 
 theme:
   name: material
   favicon: assets/images/favicon.png
   logo: assets/images/mkdocs_bitcoin_cash_node_logo.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)" 
       scheme: default
