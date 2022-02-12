@@ -2,19 +2,19 @@
 
 ## Download and extract the Bitcoin Cash Node package
 
-Open a web browser on your Raspberry Pi, and go to the **[Download](https://bitcoincashnode.org/en/download.html)** page on the Bitcoin Cash Node website.
+Open a web browser on the Raspberry Pi, and go to the **[Download](https://bitcoincashnode.org/en/download.html)** page on the Bitcoin Cash Node website.
 
-Under **Linux**, download the **AARCH 64 (tar)** package to the home directory on your mounted SSD. Downloading this compressed package should take about 1 minute.
+Make sure the latest version of BCHN is selected. Under **Linux**, download the **AARCH 64 (tar)** package to the home directory on our mounted SSD. Downloading this compressed package should take about 1 minute.
 
-![Bitcoin Cash Node download](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_download.png?raw=true)
+![Bitcoin Cash Node download screen](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_download.png?raw=true)
 
 After the compressed package finishes downloading, let's extract the compressed package. 
 
-To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace **<SSD-directory-containing-downloaded-package>** in the command below with the directory where you saved the compressed package to.
+To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace **<SSD-directory-containing-downloaded-package>** in the command below with the directory where we saved the compressed package to.
 
 `cd /<SSD-directory-containing-downloaded-package>`
 
-Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace **<version-number-downloaded>** with the version number that matches the package you downloaded.
+Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace **<version-number-downloaded>** with the version number that matches the package we downloaded.
 
 `sudo tar -xvzf bitcoin-cash-node-<version-number-downloaded>-aarch64-linux-gnu.tar.gz`
 
@@ -24,17 +24,17 @@ While we're in this directory, let's create a new directory to store the blockch
 
 ## Run Bitcoin Cash Node
 
-Now that we've extracted the Bitcoin Cash Node package, let's run the software and start downloading the transactions within the blockchain to your node.
+Now that we've extracted the Bitcoin Cash Node package, let's run the software and start downloading the blockchain transactions to our node.
 
 > **Note:** Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.
 
-To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace **<version-number-downloaded>** with the version number that matches the package you downloaded.
+To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace **<version-number-downloaded>** with the version number that matches the package we downloaded.
 
 `sudo bitcoin-cash-node-<version-number-downloaded>/bin/bitcoin-qt`
 
 The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to. 
 
-Select **Use a custom data directory**, and click the **three dots** to choose a directory.
+Under **Use a custom data directory**, click the **three dots** to choose a directory.
 
 ![Bitcoin Cash Node welcome screen](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_welcome_screen.png?raw=true)
 

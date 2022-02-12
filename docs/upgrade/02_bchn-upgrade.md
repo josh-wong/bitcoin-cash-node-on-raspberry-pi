@@ -2,24 +2,25 @@
 
 ## Download and extract the Bitcoin Cash Node package
 
-Open a web browser on your Raspberry Pi, and go to the **[Download](https://bitcoincashnode.org/en/download.html)** page on the Bitcoin Cash Node website.
+Open a web browser on the Raspberry Pi, and go to the **[Download](https://bitcoincashnode.org/en/download.html)** page on the Bitcoin Cash Node website.
 
-Make sure the latest version of BCHN is selected. Under **Linux**, download the **AARCH 64 (tar)** package to the Downloads directory on your device. Downloading this compressed package should take about 1 minute.
-https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/images/bitcoin_cash_node_download.png?raw=true
+Make sure the latest version of BCHN is selected. Under **Linux**, download the **AARCH 64 (tar)** package to the home directory on our mounted SSD. Downloading this compressed package should take about 1 minute.
+
+![Bitcoin Cash Node download screen](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/images/bitcoin_cash_node_download.png?raw=true)
 
 After the compressed package finishes downloading, let's move the compressed file to the SSD. To do so, open **Terminal** and run the following command. Be sure to replace **/<new-version-number/>** with the version number that matches the package we just downloaded.
 
 `sudo mv Downloads/bitcoin-cash-node-<new-version-number>-aarch64-linux-gnu.tar.gz /<SSD-directory-containing-downloaded-package>` 
 
-Next, let's go to the SSD directory by running the following command. Be sure to replace **/<SSD-directory-containing-downloaded-package/>** in the command below with the directory where you saved the compressed package to.
+Next, let's go to the SSD directory by running the following command. Be sure to replace **/<SSD-directory-containing-downloaded-package/>** in the command below with the directory where we saved the compressed package to.
 
  `cd /<SSD-directory-containing-downloaded-package>`
 
-Now, let's extract the compressed package. Let's open **Terminal** and run the following command. Be sure to replace **/<new-version-number/>** with the version number that matches the package you downloaded.
+Now, let's extract the compressed package. Let's open **Terminal** and run the following command. Be sure to replace **/<new-version-number/>** with the version number that matches the package we downloaded.
 
 `sudo tar -xvzf bitcoin-cash-node-<new-version-number>-aarch64-linux-gnu.tar.gz`
 
-The files from the newer version of Bitcoin Cash Node will be extracted to the SSD. We don't need the compressed package anymore, so let's remove it by running the following command in **Terminal**. Be sure to replace **/<new-version-number/>** with the version number that matches the package you downloaded.
+The files from the newer version of Bitcoin Cash Node will be extracted to the SSD. We don't need the compressed package anymore, so let's remove it by running the following command in **Terminal**. Be sure to replace **/<new-version-number/>** with the version number that matches the package we downloaded.
 
 `sudo rm bitcoin-cash-node-<new-version-number>-aarch64-linux-gnu.tar.gz`
 
@@ -31,7 +32,7 @@ Since we've already been running Bitcoin Cash Node on an earlier version, we don
 
 Let's move the blockchain data from our previous installation to the newer version of Bitcoin Cash Node by running the following command. Be sure to:
 - Replace **/<old-version-number/>** with the version number of our previous Bitcoin Cash Node installation.
-- Replace **/<blockchain-data-directory/>** with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation.
+- Replace **/<blockchain-data-directory/>** with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation. For example, I had previously named my directory "blockchain-data".
 - Replace **/<new-version-number/>** with the version number that matches the package we downloaded earlier.
 
 `sudo mv bitcoin-cash-node-<old-version-number>/<blockchain-data-directory> bitcoin-cash-node-<new-version-number>` 
@@ -51,23 +52,32 @@ In **Terminal**, run the following command. Be sure to:
 
 Now that we've moved the blockchain data to the newer version of Bitcoin Cash Node, let's run the software. 
 
-To start the Bitcoin Cash Node software, run the following command in **Terminal**. ==Be sure to replace **/<new-version-number/>** with the version number that matches the package you downloaded.==
+To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace **/<new-version-number/>** with the version number that matches the package you downloaded.
 
-==add this to setup instructions; original instructions are missing the folder name==
 `sudo bitcoin-cash-node-<new-version-number>/bin/bitcoin-qt`
 
 You will be greeted with a **Welcome** window. The directory shown here will likely be pointing to the previous directory, which we've moved to the newer Bitcoin Cash Node directory.
+![Bitcoin Cash Node welcome screen](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_welcome?raw=true)
 
-Under **Use a custom data directory**, click the **button with the three dots** to choose a different directory. The **Choose data directory** window will be displayed. (08_bchn_welcome.png) 
+Under **Use a custom data directory**, click the **three dots** to choose a different directory. The **Choose data directory** window will be displayed. 
 
-Go to the newer Bitcoin Cash Node directory, select the directory that contains the blockchain data that we moved earlier, and click **Choose**. (09_bchn_welcome_change_directory.png)
+Go to the newer Bitcoin Cash Node directory, select the directory that contains the blockchain data that we moved earlier, and click **Choose**. As mentioned earlier, you can see my directory name is "blockchain-data". 
+![Change Bitcoin Cash Node blockchain directory](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_welcome_change_directory.png?raw=true)
 
-On the **Welcome** window, click **OK**. Since our node was down for a while, we will need to download the transactions that we have missed.
+On the **Welcome** window, click **OK**. 
+
+Since our node was down for a while, our device will start downloading the Bitcoin Cash transactions that we have missed.
 
 > **Note:** The time necessary for downloading the missing transactions will vary depending on how long the node was not running.
 
-After the blockchain has finished downloading transactions, the standard Bitcoin Cash Node GUI will be displayed. To confirm which version of Bitcoin Cash Node we are running, click **Help** and select **About Bitcoin Cash Node**. (10_help_about_bchn.png)
+After the device has finished downloading transactions, the main window of the Bitcoin Cash Node GUI will be displayed. 
 
-Our version will be displayed on the window that appears. (11_about_bchn.png)
+## Confirm Bitcoin Cash Node version
+
+To confirm which version of Bitcoin Cash Node we are running, click **Help** and select **About Bitcoin Cash Node**. 
+![About Bitcoin Cash Node](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_help_about.png?raw=true)
+
+Our version will be displayed on the window that appears. 
+![About Bitcoin Cash Node](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_about.png?raw=true)
 
 The process of upgrading Bitcoin Cash Node is now finished.

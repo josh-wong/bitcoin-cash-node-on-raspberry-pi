@@ -1,21 +1,32 @@
 # Preparation
 
-Before upgrading Bitcoin Cash Node, we should back up our wallet (in the .dat file format) and update our device. This will help ensure a smooth transition to upgrading
+Before upgrading Bitcoin Cash Node, we should back up our wallet (in the .dat file format) and update our device. This will help ensure a smooth upgrade process.
 
 ## Back up our Bitcoin Cash wallet
 
-1. In the **BCHN GUI**, click **File** and select **Back up wallet**. (0-1_file_backup.png)
-2. Choose a directory where to save our wallet backup. (0-2_save_backup.png)
+In the **Bitcoin Cash Node application**, click **File** and choose **Back up wallet**. 
+![Back up Bitcoin Cash wallet](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_wallet_backup.png?raw=true)
+
+Then, let's choose a directory to save our wallet backup. 
+![Save Bitcoin Cash wallet backup](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_wallet_backup_save.png?raw=true)
 
 Our wallet will be saved in the directory we chose. We will be moving this wallet file to the newer version of Bitcoin Cash Node later, so remember where we saved this wallet backup file.
 
-## Update your device
+## Update and upgrade Ubuntu Desktop
 
-1. Close Bitcoin Cash Node.
-	- **To close the application from the graphical user interface (GUI):** Click **File**, then choose **Exit**. (2-1_close_bchn_gui.png)
-	- **To close the application from Terminal (if that is where you ran Bitcoin Cash Node):** Press **Ctrl + C** on the keyboard. (2-2_close_bchn_terminal.png)
-2. Update and upgrade Ubuntu by doing one of the following:
-    - Run the following command in Terminal.
-    `sudo XXXXXXXX`
-    - Click **File**, then select **Exit**.(3_upgrade(1).png)
-3. Restart the device.
+Before we start the upgrade process, let's exit from Bitcoin Cash Node and install any updates and upgrades to Ubuntu Desktop.
+
+To close Bitcoin Cash Node, do one of the following:
+- **To close the application from the graphical user interface (GUI):** Click **File**, then choose **Exit**. 
+![GUI - Close Bitcoin Cash](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_close_gui.png?raw=true)
+
+- **To close the application from Terminal (if that is where you ran Bitcoin Cash Node):** Press **Ctrl + C** on the keyboard. 
+![Terminal - Close Bitcoin Cash Node](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_close_terminal.png?raw=true)
+
+Now, let's update and upgrade Ubuntu Desktop by running the following command in Terminal.
+
+`sudo apt update && sudo apt upgrade -y`
+
+Since we might have installed major updates and upgrades, let's reboot the device by running the following command in Terminal.
+
+`sudo reboot`
