@@ -8,6 +8,7 @@ theme:
     repo: fontawesome/brands/github
 
 plugins:
+  - search
   - git-revision-date-localized:
     type: date
     enable_creation_date: true
