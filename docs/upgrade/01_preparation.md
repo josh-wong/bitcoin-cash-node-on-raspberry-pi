@@ -17,6 +17,7 @@ Our wallet will be saved in the directory we chose. We will be moving this walle
 Before we start the upgrade process, let's exit from Bitcoin Cash Node and install any updates and upgrades to Ubuntu Desktop.
 
 To close Bitcoin Cash Node, do one of the following:
+
 - **To close the application from the graphical user interface (GUI):** Click **File**, then choose **Exit**. 
 ![GUI - Close Bitcoin Cash](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_close_gui.png?raw=true)
 

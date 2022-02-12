@@ -31,6 +31,7 @@ Now that we have our new Bitcoin Cash Node files extracted, let's move the block
 Since we've already been running Bitcoin Cash Node on an earlier version, we don't need to completely download the blockchain data again. Instead, we can move the blockchain data we previously downloaded to the directory of the newer version of Bitcoin Cash.
 
 Let's move the blockchain data from our previous installation to the newer version of Bitcoin Cash Node by running the following command. Be sure to:
+
 - Replace **/<old-version-number/>** with the version number of our previous Bitcoin Cash Node installation.
 - Replace **/<blockchain-data-directory/>** with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation. For example, I had previously named my directory "blockchain-data".
 - Replace **/<new-version-number/>** with the version number that matches the package we downloaded earlier.
@@ -42,6 +43,7 @@ Let's move the blockchain data from our previous installation to the newer versi
 Let's move the wallet file (.dat) that we backed up earlier into the directory of the newer version of Bitcoin Cash Node.
 
 In **Terminal**, run the following command. Be sure to:
+
 - Replace **/<directory-of-wallet-backup/>** with the name of the directory where we saved the wallet backup file to earlier.
 - Replace **/<new-version-number/>** with the version number of our new Bitcoin Cash Node installation.
 - Replace **/<blockchain-data-directory/>** with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation.

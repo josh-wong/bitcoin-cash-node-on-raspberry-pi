@@ -5,6 +5,7 @@ Let's clean up our SSD since we no longer need the files from our previous Bitco
 > **Note:** This part is optional but recommended.
 
 To remove those old files, open a new **Terminal** window and run the following command. Be sure to:
+
 - Replace **/<SSD-directory/>** with the name of the SSD directory.
 - Replace **/<old-version-number/>** with the version number of the previous Bitcoin Cash Node installation.
 
