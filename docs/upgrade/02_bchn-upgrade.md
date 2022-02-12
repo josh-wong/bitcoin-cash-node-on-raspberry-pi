@@ -8,19 +8,19 @@ Make sure the latest version of BCHN is selected. Under **Linux**, download the 
 
 ![Bitcoin Cash Node download screen](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_download.png?raw=true)
 
-After the compressed package finishes downloading, let's move the compressed file to the SSD. To do so, open **Terminal** and run the following command. Be sure to replace **\<new-version-number\>** with the version number that matches the package we just downloaded.
+After the compressed package finishes downloading, let's move the compressed file to the SSD. To do so, open **Terminal** and run the following command. Be sure to replace **<new-version-number\>** with the version number that matches the package we just downloaded.
 
 `sudo mv Downloads/bitcoin-cash-node-<new-version-number>-aarch64-linux-gnu.tar.gz /<SSD-directory-containing-downloaded-package>` 
 
-Next, let's go to the SSD directory by running the following command. Be sure to replace \*\*<SSD-directory-containing-downloaded-package>\*\* in the command below with the directory where we saved the compressed package to.
+Next, let's go to the SSD directory by running the following command. Be sure to replace **\<SSD-directory-containing-downloaded-package\** in the command below with the directory where we saved the compressed package to.
 
  `cd /<SSD-directory-containing-downloaded-package>`
 
-Now, let's extract the compressed package. Let's open **Terminal** and run the following command. Be sure to replace \*\*<new-version-number>\*\* with the version number that matches the package we downloaded.
+Now, let's extract the compressed package. Let's open **Terminal** and run the following command. Be sure to replace **\<new-version-number\>** with the version number that matches the package we downloaded.
 
 `sudo tar -xvzf bitcoin-cash-node-<new-version-number>-aarch64-linux-gnu.tar.gz`
 
-The files from the newer version of Bitcoin Cash Node will be extracted to the SSD. We don't need the compressed package anymore, so let's remove it by running the following command in **Terminal**. Be sure to replace \*\*<new-version-number>\*\* with the version number that matches the package we downloaded.
+The files from the newer version of Bitcoin Cash Node will be extracted to the SSD. We don't need the compressed package anymore, so let's remove it by running the following command in **Terminal**. Be sure to replace **\<new-version-number\>** with the version number that matches the package we downloaded.
 
 `sudo rm bitcoin-cash-node-<new-version-number>-aarch64-linux-gnu.tar.gz`
 
@@ -32,7 +32,7 @@ Since we've already been running Bitcoin Cash Node on an earlier version, we don
 
 Let's move the blockchain data from our previous installation to the newer version of Bitcoin Cash Node by running the following command. Be sure to:
 
-- Replace \*\*<old-version-number>\*\* with the version number of our previous Bitcoin Cash Node installation.
+- Replace **\<old-version-number\>** with the version number of our previous Bitcoin Cash Node installation.
 - Replace \*\*<blockchain-data-directory>\*\* with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation. For example, I had previously named my directory "blockchain-data".
 - Replace \*\*<new-version-number>\*\* with the version number that matches the package we downloaded earlier.
 
