@@ -1,17 +1,41 @@
-site_name: 🟢How to run Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop
+site_name: How to run Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop
 site_url: https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/
+
 theme:
   name: material
+  favicon: assets/images/favicon.png
+  logo: assets/images/mkdocs_bitcoin_cash_node_logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: blue
+      accent: blue
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: blue
+      accent: blue
 
 nav:
-  - Overview: 'installation-and-setup/index.md'
-  - Prerequisites: 'installation-and-setup/01_prerequisites.md'
+  - Overview: 'index.md'
   - Installing Bitcoin Cash Node:
-    - Preparing your Raspberry Pi: 'installation-and-setup/02_preparation.md'
-    - Setting up Bitcoin Cash Node: 'installation-and-setup/03_bchn-setup.md'
-    - Setting up your Bitcoin Cash wallet: 'installation-and-setup/04_wallet-setup.md'
-  - Conclusion: 'installation-and-setup/05_conclusion.md'
+    - Getting started: 'installation-and-setup/index.md'
+    - Preparing your device: 'installation-and-setup/01_preparation.md'
+    - Setting up Bitcoin Cash Node: 'installation-and-setup/02_bchn-setup.md'
+    - Setting up your Bitcoin Cash wallet: 'installation-and-setup/03_wallet-setup.md'
+    - Conclusion: 'installation-and-setup/04_conclusion.md'
+  - Upgrading Bitcoin Cash Node:
+    - Getting started: 'upgrade/index.md'
+    - Preparing your device: 'upgrade/01_preparation.md'
+    - Upgrading Bitcoin Cash Node: 'upgrade/02_bchn-upgrade.md'
+    - Cleaning up old files: 'upgrade/03_cleanup.md'
+    - Conclusion: 'upgrade/04_conclusion.md'
   - References: 'references/index.md'
   - Contributions: 'contributions/index.md'
   - Donations: 'donations/index.md'
-  - ⬅️return to josh-wong: 'https://josh-wong.github.io/'
+  - 🏠return to josh-wong: 'https://josh-wong.github.io/'

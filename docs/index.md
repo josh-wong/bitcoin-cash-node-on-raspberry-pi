@@ -1,12 +1,16 @@
 # Overview
 
-This tutorial describes how to install and set up [Bitcoin Cash Node](https://bitcoincashnode.org/) on a Raspberry Pi 4 running Ubuntu Desktop (64-bit). We will focus on using the Bitcoin Cash Node graphical user interface (GUI) so that you can visualize processes on the blockchain and your Bitcoin Cash wallet transactions.
+This knowledge base includes instructions on the following:
+- How to install and set up Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop (64-bit).
+- How to upgrade Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop (64-bit).
 
-These instructions are intended for those who have basic knowledge of the Ubuntu environment and Linux commands.
+The contents of this knowledge base are intended for those who are familiar with the Ubuntu environment and Linux commands.
+
+> **Note:** I'm using a Raspberry Pi 4 simply to minimize carbon footprint while still contributing to the health and decentralization of Bitcoin Cash. However, these instructions should work on other types of devices running Ubuntu Desktop. 
 
 ## Introduction to Bitcoin Cash Node
 
-Bitcoin Cash Node is a node and wallet implementation for the Bitcoin Cash network. The software downloads and, by default, stores the entire history of Bitcoin Cash transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to few days.
+ [Bitcoin Cash Node](https://bitcoincashnode.org/) is a node and wallet implementation for the Bitcoin Cash network. The software downloads and, by default, stores the entire history of Bitcoin Cash transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to few days.
 
 ## Benefits of running Bitcoin Cash Node
 
@@ -14,4 +18,4 @@ Bitcoin Cash Node is a node and wallet implementation for the Bitcoin Cash netwo
 - Contribute to the Bitcoin Cash network by letting others to use your node to broadcast transactions.
 - Further decentralize the Bitcoin Cash blockchain, thereby improving reliability and security.
 - Improve your understanding of how the blockchain technology of a top cryptocurrency works.
-- Be part of the growing Bitcoin Cash community.
+- Be part of the growing, passionate Bitcoin Cash community.

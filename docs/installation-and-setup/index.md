@@ -1,17 +1,20 @@
-# Overview
+# Getting started
 
 This tutorial describes how to install and set up [Bitcoin Cash Node](https://bitcoincashnode.org/) on a Raspberry Pi 4 running Ubuntu Desktop (64-bit). We will focus on using the Bitcoin Cash Node graphical user interface (GUI) so that you can visualize processes on the blockchain and your Bitcoin Cash wallet transactions.
 
 These instructions are intended for those who have basic knowledge of the Ubuntu environment and Linux commands.
 
-## Introduction to Bitcoin Cash Node
+## Prerequisites
 
-Bitcoin Cash Node is a node and wallet implementation for the Bitcoin Cash network. The software downloads and, by default, stores the entire history of Bitcoin Cash transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to few days.
-
-## Benefits of running Bitcoin Cash Node
-
-- Promote electronic peer-to-peer payments through active involvement.
-- Contribute to the Bitcoin Cash network by letting others to use your node to broadcast transactions.
-- Further decentralize the Bitcoin Cash blockchain, thereby improving reliability and security.
-- Improve your understanding of how the blockchain technology of a top cryptocurrency works.
-- Be part of the growing Bitcoin Cash community.
+- Raspberry Pi 4 (4 GB of RAM or more)
+  - Operating system: Ubuntu Desktop (64-bit)
+- microSD card (32 GB or more)
+- Micro USB-C power cable
+- Micro HDMI cable
+- Monitor with an HDMI interface
+- Keyboard (USB or Bluetooth)
+- USB mouse (USB or Bluetooth)
+- External SSD (500 GB or more)
+  > **Note:** For the data associated with the Bitcoin Cash blockchain, you should reserve at least 200 GB. Be sure your SSD is large enough to accommodate the growing blockchain if you want to keep verifying transactions for the foreseeable future on your Raspberry Pi.
+- Raspberry Pi case with a GPIO fan and heat sinks (recommended)
+- Reliable Internet connection
