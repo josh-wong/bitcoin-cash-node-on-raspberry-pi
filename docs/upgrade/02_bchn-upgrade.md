@@ -8,7 +8,7 @@ Make sure the latest version of BCHN is selected. Under **Linux**, download the 
 
 ![Bitcoin Cash Node download screen](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_download.png?raw=true)
 
-After the compressed package finishes downloading, let's move the compressed file to the SSD. To do so, open **Terminal** and run the following command. Be sure to replace \*\*<new-version-number>\*\* with the version number that matches the package we just downloaded.
+After the compressed package finishes downloading, let's move the compressed file to the SSD. To do so, open **Terminal** and run the following command. Be sure to replace \*\*\<new-version-number\>\*\* with the version number that matches the package we just downloaded.
 
 `sudo mv Downloads/bitcoin-cash-node-<new-version-number>-aarch64-linux-gnu.tar.gz /<SSD-directory-containing-downloaded-package>` 
 
