@@ -7,7 +7,6 @@ edit_uri: edit/main/docs/
 
 plugins:
   - search
-  - git-revision-date
 
 theme:
   name: material
