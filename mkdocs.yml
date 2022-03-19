@@ -29,6 +29,8 @@ theme:
         name: Switch to light mode
       primary: blue
       accent: blue
+  features:
+    - search.suggest
 
 nav:
   - Overview: 'index.md'
