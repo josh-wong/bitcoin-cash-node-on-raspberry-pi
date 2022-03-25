@@ -1,10 +1,9 @@
 site_name: How to run Bitcoin Cash Node on a Raspberry Pi 4 with Ubuntu Desktop
 site_url: https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/
 
-# adds repo details in the top right-hand corner; removing since it's 
-# to have in a multidocs site
-# repo_name: josh-wong/bitcoin-cash-node-on-raspberry-pi
-# repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
+# adds repo details in the top right-hand corner
+repo_name: josh-wong/bitcoin-cash-node-on-raspberry-pi
+repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
 # removes the edit page button since there's a conflict with having the edit 
 # page button on both single docs sites and this multidocs site; doesn't seem 
 # to be a way to remove it from one site and keep it on the other
