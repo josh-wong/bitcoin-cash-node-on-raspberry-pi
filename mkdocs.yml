@@ -3,7 +3,9 @@ site_url: https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/
 
 repo_name: josh-wong/bitcoin-cash-node-on-raspberry-pi
 repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
-edit_uri: edit/main/docs/
+# hides the edit button since there's a conflict between editing the 
+# multirepo docs site and the individual docs site
+edit_uri: ""
 
 plugins:
   - search
