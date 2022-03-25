@@ -7,7 +7,7 @@ repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
 # removes the edit page button since there's a conflict with having the edit 
 # page button on both single docs sites and this multidocs site; doesn't seem 
 # to be a way to remove it from one site and keep it on the other
-# edit_uri: edit/main/docs/
+edit_uri: ""
 
 plugins:
   - search
