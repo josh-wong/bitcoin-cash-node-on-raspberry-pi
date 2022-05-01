@@ -1,4 +1,4 @@
-# Clean up old files
+# Cleaning up old files
 
 Let's clean up our SSD since we no longer need the files from our previous Bitcoin Cash Node installation. 
 

@@ -1,4 +1,4 @@
-# How to upgrade Bitcoin Cash Node
+# Upgrading Bitcoin Cash Node
 
 ## Download and extract the Bitcoin Cash Node package
 

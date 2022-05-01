@@ -1,4 +1,4 @@
-# Preparing your Raspberry Pi
+# Preparing your device
 
 This tutorial assumes that you have already installed and configured Ubuntu Desktop on your Raspberry Pi to your liking and have mounted the SSD to your Pi.
 

@@ -1,4 +1,4 @@
-# Preparation
+# Preparing your device
 
 Before upgrading Bitcoin Cash Node, we should back up our wallet (in the .dat file format) and update our device. This will help ensure a smooth upgrade process.
 

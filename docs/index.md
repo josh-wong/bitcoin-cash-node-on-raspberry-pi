@@ -1,11 +1,11 @@
-# Overview
+# How to install, configure, and upgrade Bitcoin Cash Node
 
-This knowledge base includes instructions for the following:
+The set of Bitcoin Cash Node tutorials in this section includes instructions for the following:
 
 - [How to install and set up Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop (64-bit)](https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/installation-and-setup/)
 - [How to upgrade Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop (64-bit)](https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/upgrade/)
 
-The contents of this knowledge base are intended for those who are familiar with the Ubuntu environment and Linux commands.
+These tutorials are intended for those who are familiar with the Ubuntu environment and Linux commands.
 
 > **Note:** I'm using a Raspberry Pi 4 simply to minimize carbon footprint while still contributing to the health and decentralization of Bitcoin Cash. However, these instructions should work on other types of devices running Ubuntu Desktop. 
 

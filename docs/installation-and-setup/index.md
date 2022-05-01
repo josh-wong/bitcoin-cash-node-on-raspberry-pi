@@ -7,7 +7,7 @@ These instructions are intended for those who have basic knowledge of the Ubuntu
 ## Prerequisites
 
 - Raspberry Pi 4 (4 GB of RAM or more)
-  - Operating system: Ubuntu Desktop (64-bit)
+- Ubuntu Desktop (64-bit) OS
 - microSD card (32 GB or more)
 - Micro USB-C power cable
 - Micro HDMI cable
