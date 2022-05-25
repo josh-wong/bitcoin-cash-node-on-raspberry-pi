@@ -12,6 +12,7 @@ edit_uri: blob/main/
 
 plugins:
   - search
+  - git-revision-date
 
 theme:
   name: material
