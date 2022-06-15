@@ -4,6 +4,7 @@ metadata:
   name: bitcoin-cash-node-on-raspberry-pi
   annotations:
     github.com/project-slug: josh-wong/bitcoin-cash-node-on-raspberry-pi
+    backstage.io/techdocs-ref: value
 spec:
   type: other
   lifecycle: unknown
