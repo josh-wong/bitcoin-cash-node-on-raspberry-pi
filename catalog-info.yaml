@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bitcoin-cash-node-on-raspberry-pi
+  annotations:
+    github.com/project-slug: josh-wong/bitcoin-cash-node-on-raspberry-pi
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
