@@ -4,8 +4,7 @@ metadata:
   name: bitcoin-cash-node-on-raspberry-pi
   title: Bitcoin Cash Node on Raspberry Pi
   description: This repository contains documentation for how to install and upgrade Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop (64-bit).
-  tags:
-    - Markdown
+  tags: Markdown
   annotations:
     github.com/project-slug: josh-wong/bitcoin-cash-node-on-raspberry-pi
     backstage.io/techdocs-ref: dir:.
