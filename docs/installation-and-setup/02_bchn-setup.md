@@ -26,7 +26,9 @@ While we're in this directory, let's create a new directory to store the blockch
 
 Now that we've extracted the Bitcoin Cash Node package, let's run the software and start downloading the blockchain transactions to our node.
 
-> **Note:** Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.
+> **Note**
+> 
+> Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.
 
 To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace **<VERSION-NUMBER-DOWNLOADED\>** with the version number that matches the package we downloaded.
 
@@ -50,6 +52,8 @@ After all the Bitcoin Cash transactions have finished downloading to your SSD, y
 
 To monitor inbound and outbound traffic on your node, click **Window** in the menu bar and choose **Network Traffic**. From here, you can see how much data is being transferred to and from your node. 
 
-> **Note:** The "Received" and "Sent" under "Totals" will reset if you restart the Bitcoin Cash Node software. Additionally, the network traffic will reset if you move the slider below the graph.
+> **Note**
+> 
+> The "Received" and "Sent" under "Totals" will reset if you restart the Bitcoin Cash Node software. Additionally, the network traffic will reset if you move the slider below the graph.
 
 ![Bitcoin Cash Node network traffic 30 minutes](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_network_traffic_30_minutes.png?raw=true)

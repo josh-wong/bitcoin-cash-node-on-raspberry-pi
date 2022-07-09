@@ -7,7 +7,9 @@ The set of Bitcoin Cash Node tutorials in this section includes instructions for
 
 These tutorials are intended for those who are familiar with the Ubuntu environment and Linux commands.
 
-> **Note:** I'm using a Raspberry Pi 4 simply to minimize carbon footprint while still contributing to the health and decentralization of Bitcoin Cash. However, these instructions should work on other types of devices running Ubuntu Desktop. 
+> **Note**
+> 
+> I'm using a Raspberry Pi 4 simply to minimize carbon footprint while still contributing to the health and decentralization of Bitcoin Cash. However, these instructions should work on other types of devices running Ubuntu Desktop. 
 
 ## Introduction to Bitcoin Cash Node
 
