@@ -14,7 +14,8 @@ plugins:
   - search
   - techdocs-core
   # Shows the last updated date
-  - git-revision-date
+  - git-revision-date-localized:
+      type: date
 
 markdown_extensions:
   # Add styles for buttons
