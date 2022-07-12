@@ -16,6 +16,14 @@ plugins:
   # Shows the last updated date
   #- git-revision-date
 
+markdown_extensions:
+  # Add styles for buttons
+  - attr_list
+  # Add emoji support
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 theme:
   name: material
   favicon: assets/images/favicon.png
@@ -40,6 +48,10 @@ theme:
   features:
     # Add custom search functions
     - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.tracking
+    - navigation.top
 
 nav:
   - Overview: 'index.md'
