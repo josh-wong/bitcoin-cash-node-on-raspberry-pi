@@ -17,5 +17,5 @@ jobs:
       - run: pip install mkdocs-video
       #- run: pip install mkdocs-multirepo-plugin
       #- run: pip install mkdocs-git-revision-date-plugin
-      - run: pip install python-slugify
+      #- run: pip install python-slugify
       - run: mkdocs gh-deploy --force
