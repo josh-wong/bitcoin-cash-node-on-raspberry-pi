@@ -1,7 +1,7 @@
 site_name: How to run Bitcoin Cash Node on a Raspberry Pi 4 with Ubuntu Desktop
 site_url: https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/
 
-# adds repo details in the top right-hand corner
+# Add repo details in the top right-hand corner
 repo_name: josh-wong/bitcoin-cash-node-on-raspberry-pi
 repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
 # warning: this edit page button does not work; I have prioritized the 
