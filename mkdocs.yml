@@ -12,8 +12,6 @@ edit_uri: blob/main/
 plugins:
   - search
   - techdocs-core
-  # Shows the last updated date
-  #- git-revision-date
 
 markdown_extensions:
   # Add styles for buttons
