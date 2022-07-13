@@ -3,8 +3,8 @@ site_url: https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/
 
 # Add repo details in the top right-hand corner
 repo_name: josh-wong/bitcoin-cash-node-on-raspberry-pi
-repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
-edit_uri: blob/main/
+repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/
+edit_uri: blob/main/docs
 
 plugins:
   - search
