@@ -4,10 +4,9 @@ site_url: https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/
 # Add repo details in the top right-hand corner
 repo_name: josh-wong/bitcoin-cash-node-on-raspberry-pi
 repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi
-# **Warning**
-# This edit page button does not work; I have prioritized the multidocs site, 
-# so the edit page button on https://josh-wong.github.io is correct; 
-# there doesn't seem to be a way to remove it from one site and keep it on the other.
+# >**Warning**
+# >
+# > This edit page button does not work; I have prioritized the multidocs site, so the edit page button on https://josh-wong.github.io is correct; there doesn't seem to be a way to remove it from one site and keep it on the other.
 edit_uri: blob/main/
 
 plugins:
@@ -20,9 +19,9 @@ markdown_extensions:
   # Add styles for buttons
   - attr_list
   # Add emoji support
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  #- pymdownx.emoji:
+  #    emoji_index: !!python/name:materialx.emoji.twemoji
+  #    emoji_generator: !!python/name:materialx.emoji.to_svg
 
 theme:
   name: material
@@ -48,10 +47,10 @@ theme:
   features:
     # Add custom search functions
     - search.suggest
-    - search.highlight
-    - search.share
-    - navigation.tracking
-    - navigation.top
+    #- search.highlight
+    #- search.share
+    #- navigation.tracking
+    #- navigation.top
 
 nav:
   - Overview: 'index.md'
