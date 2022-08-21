@@ -2,9 +2,9 @@
 
 Let's clean up our SSD since we no longer need the files from our previous Bitcoin Cash Node installation. 
 
-> **Note**
-> 
-> This part is optional but recommended.
+!!! note
+    
+    This part is optional but recommended.
 
 To remove those old files, open a new **Terminal** window and run the following command. Be sure to:
 

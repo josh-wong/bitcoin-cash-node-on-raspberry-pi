@@ -72,9 +72,9 @@ On the **Welcome** window, click **OK**.
 
 Since our node was down for a while, our device will start downloading the Bitcoin Cash transactions that we have missed.
 
-> **Note**
-> 
-> The time necessary for downloading the missing transactions will vary depending on how long the node was not running.
+!!! note
+    
+    The time necessary for downloading the missing transactions will vary depending on how long the node was not running.
 
 After the device has finished downloading transactions, the main window of the Bitcoin Cash Node GUI will be displayed. 
 
