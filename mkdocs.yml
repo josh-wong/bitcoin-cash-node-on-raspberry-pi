@@ -23,6 +23,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  # Add support for Material for MkDocs admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 theme:
   name: material
@@ -30,6 +34,20 @@ theme:
   logo: assets/images/mkdocs_bitcoin_cash_node_logo.png
   icon:
     repo: fontawesome/brands/github
+    # Add icons for Material for MkDocs admonitions
+    admonition:
+      note: fontawesome/solid/sticky-note
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/info-circle
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/question-circle
+      warning: fontawesome/solid/exclamation-triangle
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
   palette:
     - media: "(prefers-color-scheme: light)" 
       scheme: default
