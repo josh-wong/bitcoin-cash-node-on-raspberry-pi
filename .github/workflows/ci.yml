@@ -2,19 +2,31 @@ name: ci
 on:
   push:
     branches:
-      - master 
       - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-techdocs-core
-      - run: pip install mkdocs-video
-      - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: pip install python-slugify
+      # This token expires on September 1, 2023.
+      - run: pip install \ 
+          git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git \
+          mkdocs-video \
+          mkdocs-git-revision-date-localized-plugin \
+          python-slugify \
+          mkdocs-git-committers-plugin-2 \
+          # Enable the following plugin if this documentation needs to appear in Backstage with TechDocs
+          mkdocs-techdocs-core \
+          # Enable the following plugin if this documentation is part of a multirepository docs site.
+          #mkdocs-multirepo-plugin \
+      #- run: mkdocs build --config-file mkdocs.insiders.yml
       - run: mkdocs gh-deploy --force
+env:
+  # This token expires on September 1, 2023.
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
