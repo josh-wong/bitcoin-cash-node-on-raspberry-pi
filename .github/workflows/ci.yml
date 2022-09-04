@@ -21,9 +21,7 @@ jobs:
           mkdocs-git-revision-date-localized-plugin \
           python-slugify \
           mkdocs-git-committers-plugin-2 \
-          # Enable the following plugin if this documentation needs to appear in Backstage with TechDocs
           mkdocs-techdocs-core \
-          # Enable the following plugin if this documentation is part of a multirepository docs site.
           #mkdocs-multirepo-plugin \
       #- run: mkdocs build --config-file mkdocs.insiders.yml
       - run: mkdocs gh-deploy --force
