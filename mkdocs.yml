@@ -30,6 +30,9 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - toc:
+      # Add link next to header that allows the user to get a permalink to the heading (still need to copy the URL in the address bar).
+      permalink: true
 
 theme:
   name: material
