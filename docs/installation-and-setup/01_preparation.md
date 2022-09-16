@@ -22,11 +22,13 @@ After setting up Ubuntu Desktop and automounting your SSD, let's update and upgr
 Wait for updates and upgrades to install. If prompted, reboot your device and then proceed with this tutorial.
 
 ## Set a static IP address
+
 We need to configure a static IP address and then set up port forwarding so that our Raspberry Pi can continue to communicate with other nodes even if we reboot the device. 
 
 For instructions on how to set a static IP address in Ubuntu, see Method 1 (command line) or Method 2 (GUI) in [How to Assign Static IP Address on Ubuntu Linux](https://itsfoss.com/static-ip-ubuntu/).
 
 ## Allow connections to port 8333
+
 In our router, we need to allow connections to port 8333. This is the port that allows the node to sync properly. 
 
 For details on how to allow port forwarding, please consult your router's manual. You typically need to include your device's static IP address and the port number (8333) in the Port Forwarding or NAT Forwarding setting, depending on your router.
@@ -36,6 +38,7 @@ For details on how to allow port forwarding, please consult your router's manual
     If you don't configure a static IP address, you may cause connection issues when you restart or reboot your Raspberry Pi. By setting a static IP address, we can make sure the same IP address is still allowing communication from port 8333.
 
 ## Turn off swap
+
 Turning off swap may or may not cause issues with starting Bitcoin Cash Node. Because of this, we should turn off swap.
 
 !!! note
