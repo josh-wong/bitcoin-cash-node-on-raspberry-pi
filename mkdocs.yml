@@ -75,6 +75,12 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)" 
       scheme: default
       toggle:
@@ -82,6 +88,7 @@ theme:
         name: Switch to dark mode
       primary: deep orange
       accent: blue
+    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)" 
       scheme: slate
       toggle:
