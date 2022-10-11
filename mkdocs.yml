@@ -47,16 +47,27 @@ plugins:
   - social
 
 markdown_extensions:
+  # Add support for abbreviations
+  - abbr
+  # Add support for Material for MkDocs admonitions
+  - admonition
   # Add styles for buttons
   - attr_list
+  # Add support for grid cards
+  - md_in_html
+  # Make admonitions collapsible
+  - pymdownx.details
   # Add emoji support
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  # Add support for Material for MkDocs admonitions
-  - admonition
-  - pymdownx.details
+  # Add tooltip support
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  # Add support for arbitrary nesting of code and content blocks inside each other.
   - pymdownx.superfences
+  # Add support for TOC configuration
   - toc:
       # Add link next to header that allows the user to get a permalink to the heading (still need to copy the URL in the address bar).
       permalink: true
