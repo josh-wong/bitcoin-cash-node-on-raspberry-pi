@@ -64,7 +64,9 @@ markdown_extensions:
   # Add tooltip support
   - pymdownx.snippets:
       base_path:
-        - https://github.com/josh-wong/josh-wong.github.io/main/includes/abbreviations.md
+        - https://github.com/josh-wong/josh-wong.github.io/main/
+      auto_append:
+        - includes/abbreviations.md
   # Add support for arbitrary nesting of code and content blocks inside each other.
   - pymdownx.superfences
   # Add support for TOC configuration
