@@ -63,10 +63,8 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   # Add tooltip support
   - pymdownx.snippets:
-      base_path:
-        - https://github.com/josh-wong/josh-wong.github.io/main/
-      auto_append:
-        - includes/abbreviations.md
+      url_download:
+        - https://github.com/josh-wong/josh-wong.github.io/raw/main/includes/abbreviations.md
   # Add support for arbitrary nesting of code and content blocks inside each other.
   - pymdownx.superfences
   # Add support for TOC configuration
