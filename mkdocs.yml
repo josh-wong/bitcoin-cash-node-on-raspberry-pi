@@ -8,43 +8,15 @@ repo_url: https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/
 edit_uri: blob/main/docs
 
 plugins:
-  - search
-  # Enables TechDocs support in Backstage. However, many plugins need to be disabled for TechDocs to work properly.
-  #- techdocs-core
-  # Show docs contributors
-  - git-committers:
-      repository: josh-wong/bitcoin-cash-node-on-raspberry-pi
-      branch: main
-  # Show the last updated date
-  - git-revision-date-localized:
-      type: date
+  # Enable the search function (currently disabled to take advantage of new search features in Material for MkDocs Insiders)
+  #- search
   # Enable videos to be embedded
   - mkdocs-video:
       css_style:
         width: "100%"
         height: "300px"
-  # Add RSS function
-  - rss:
-      abstract_chars_count: 160  # -1 for full content
-      categories:
-        - tags
-      comments_path: "#__comments"
-      date_from_meta:
-        as_creation: "date"
-        as_update: false
-        datetime_format: "%Y-%m-%d"
-      enabled: true
-      feed_ttl: 1440
-      image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png
-      length: 20
-      pretty_print: false
-      match_path: ".*"
-      url_parameters:
-        utm_source: "documentation"
-        utm_medium: "RSS"
-        utm_campaign: "feed-syndication"
-  # Enable support for social cards (pretty link previews)
-  - social
+  # Enables TechDocs support in Backstage. However, many plugins need to be disabled for TechDocs to work properly.
+  #- techdocs-core
 
 markdown_extensions:
   # Add support for abbreviations
@@ -124,11 +96,18 @@ theme:
     # Add support for improved tooltips
     - content.tooltips
     # Add custom search functions
-    - search.suggest
     - search.highlight
     - search.share
-    - navigation.tracking
+    - search.suggest
+    # Add custom navigation functions
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    #- navigation.sections
+    #- navigation.tabs
+    #- navigation.tabs.sticky
     - navigation.top
+    - navigation.tracking
 
 extra:
   social:
