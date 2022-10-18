@@ -47,7 +47,7 @@ markdown_extensions:
 theme:
   name: material
   # Extend the theme
-  custom_dir: overrides
+  #custom_dir: overrides
   # Add favicon to browser tab
   favicon: assets/images/favicon.png
   # Add logo to docs pages
