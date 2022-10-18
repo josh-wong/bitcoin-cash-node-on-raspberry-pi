@@ -74,7 +74,11 @@ markdown_extensions:
 
 theme:
   name: material
+  # Extend the theme
+  custom_dir: overrides
+  # Add favicon to browser tab
   favicon: assets/images/favicon.png
+  # Add logo to docs pages
   logo: assets/images/mkdocs_bitcoin_cash_node_logo.png
   icon:
     repo: fontawesome/brands/github
@@ -115,6 +119,8 @@ theme:
       primary: deep orange
       accent: blue
   features:
+    # Mark announcement as read
+    - announce.dismiss
     # Add support for improved tooltips
     - content.tooltips
     # Add custom search functions
