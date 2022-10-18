@@ -111,7 +111,7 @@ theme:
       scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
+        name: Switch to system preference
       primary: deep orange
       accent: blue
   features:
