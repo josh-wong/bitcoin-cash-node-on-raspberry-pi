@@ -1,9 +1,17 @@
 # The GitHub personal access token used in this deploy expires on September 1, 2023.
-name: ci
+name: ci 
 on:
   push:
     branches:
       - main
+
+env:
+  PYTHON_VERSION: 3.x
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,19 +20,14 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v4
         with:
-          python-version: 3.x
-      - run: pip install \ 
-          git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git \
-          mkdocs-video \
-          mkdocs-git-revision-date-localized-plugin \
-          python-slugify \
-          mkdocs-git-committers-plugin-2 \
-          mkdocs-rss-plugin \
-          #mkdocs-techdocs-core \
-          #mkdocs-multirepo-plugin \
-      #- run: mkdocs build --config-file mkdocs.insiders.yml
-      - run: mkdocs gh-deploy --force
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: actions/cache@v3
+        id: cache
+        with:
+          key: ${{ runner.os }}-${{ hashFiles('.cache/**') }}
+          path: .cache
+      - run: pip install -r requirements.txt
+      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: make deploy
