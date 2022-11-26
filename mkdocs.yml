@@ -136,6 +136,9 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/josh_in_japan
       name: josh_in_japan on Twitter
+  status:
+    new: Recently added
+    deprecated: Deprecated
 
 extra_css:
   - stylesheets/extra.css
