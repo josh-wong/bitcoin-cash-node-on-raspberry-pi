@@ -76,11 +76,11 @@ theme:
         name: Switch to light mode
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)" 
-      scheme: default
+      scheme: 080f53
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-      primary: deep orange
+      primary: blue
       accent: blue
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)" 
@@ -88,7 +88,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to system preference
-      primary: deep orange
+      primary: blue
       accent: blue
   features:
     # Mark announcement as read
@@ -120,6 +120,9 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/josh_in_japan
       name: josh_in_japan on Twitter
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Overview: 'index.md'
