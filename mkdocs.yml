@@ -110,6 +110,22 @@ theme:
     - navigation.tracking
 
 extra:
+  analytics:
+    provider: google
+    property: G-PMP34RZWN2
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help me improve this page by <a href="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">creating an issue in GitHub</a>.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/josh-wong
