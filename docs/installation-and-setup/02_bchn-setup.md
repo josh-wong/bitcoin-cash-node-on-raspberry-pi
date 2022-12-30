@@ -8,7 +8,7 @@ Make sure the latest version of BCHN is selected. Under **Linux**, download the 
 
 ![Bitcoin Cash Node download screen](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_download.png?raw=true)
 
-After the compressed package finishes downloading, let's extract the compressed package. 
+After the compressed package finishes downloading, let's extract the compressed package.
 
 To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace `<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE>` in the command below with the directory where we saved the compressed package to.
 
@@ -42,7 +42,7 @@ To start the Bitcoin Cash Node software, run the following command in **Terminal
 sudo bitcoin-cash-node-<VERSION-NUMBER-DOWNLOADED>/bin/bitcoin-qt
 ```
 
-The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to. 
+The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to.
 
 Under **Use a custom data directory**, click the **three dots** to choose a directory.
 
@@ -58,7 +58,7 @@ After all the Bitcoin Cash transactions have finished downloading to your SSD, y
 
 ![Bitcoin Cash Node synced](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_synced.png?raw=true)
 
-To monitor inbound and outbound traffic on your node, click **Window** in the menu bar and choose **Network Traffic**. From here, you can see how much data is being transferred to and from your node. 
+To monitor inbound and outbound traffic on your node, click **Window** in the menu bar and choose **Network Traffic**. From here, you can see how much data is being transferred to and from your node.
 
 !!! note
     

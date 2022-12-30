@@ -22,11 +22,11 @@ After you have successfully encrypted your wallet with a password, the following
 
 ## Back up your wallet
 
-Now, let's back up your wallet. 
+Now, let's back up your wallet.
 
 Backing up your wallet let's you restore it if the device hosting your node and wallet encounters a catastrophic failure.
 
-In the menu bar, click **File** and select **Backup Wallet**. 
+In the menu bar, click **File** and select **Backup Wallet**.
 
 When the directory window appears, choose a directory to save the wallet data (.dat) file to. If you don't have your Raspberry Pi set up to communicate with other computers on your network, save the wallet file (.dat) to your Raspberry Pi first and then immediately save it to another device for safe-keeping.
 

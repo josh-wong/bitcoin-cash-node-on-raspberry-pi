@@ -1,19 +1,19 @@
-# Preparing your device
+# Preparing our device
 
-This tutorial assumes that you have already installed and configured Ubuntu Desktop on your Raspberry Pi to your liking and have mounted the SSD to your Pi.
+This tutorial assumes that we have already installed and configured Ubuntu Desktop on our Raspberry Pi to our liking and have mounted the SSD to our Raspberry Pi.
 
 1. **For details on installing Ubuntu Desktop (64-bit) on your Raspberry Pi**, please see [How to install Ubuntu Desktop on Raspberry Pi 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview).
 2. **For details on automounting your SSD in Ubuntu**, please see [How to properly automount a drive in Ubuntu Linux](https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/).
 
-## Check your Ubuntu architecture
+## Check our Ubuntu architecture
 
-Before you proceed, let's make sure you're running the aarch64 version of Ubuntu on the Raspberry Pi. Run the following command in **Terminal**.
+Before we proceed, let's make sure we're running the aarch64 version of Ubuntu on our Raspberry Pi. Run the following command in **Terminal**.
 
 ```console
 uname -m
 ```
 
-If `aarch64` is not output, please follow the instructions in How to install Ubuntu Desktop on Raspberry Pi 4 and make sure to select the 64-bit option of Ubuntu Desktop.
+If `aarch64` is not output, please follow the instructions in [How to install Ubuntu Desktop on Raspberry Pi 4](https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview) and make sure to select the 64-bit option of Ubuntu Desktop.
 
 ## Update and upgrade your Raspberry Pi and Ubuntu
 
@@ -27,13 +27,13 @@ Wait for updates and upgrades to install. If prompted, reboot your device and th
 
 ## Set a static IP address
 
-We need to configure a static IP address and then set up port forwarding so that our Raspberry Pi can continue to communicate with other nodes even if we reboot the device. 
+We need to configure a static IP address and then set up port forwarding so that our Raspberry Pi can continue to communicate with other nodes even if we reboot the device.
 
 For instructions on how to set a static IP address in Ubuntu, see Method 1 (command line) or Method 2 (GUI) in [How to Assign Static IP Address on Ubuntu Linux](https://itsfoss.com/static-ip-ubuntu/).
 
 ## Allow connections to port 8333
 
-In our router, we need to allow connections to port 8333. This is the port that allows the node to sync properly. 
+In our router, we need to allow connections to port 8333. This is the port that allows the node to sync properly.
 
 For details on how to allow port forwarding, please consult your router's manual. You typically need to include your device's static IP address and the port number (8333) in the Port Forwarding or NAT Forwarding setting, depending on your router.
 

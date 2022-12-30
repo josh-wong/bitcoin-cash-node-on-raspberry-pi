@@ -1,6 +1,6 @@
 # How to upgrade Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop
 
-This tutorial describes how to upgrade [Bitcoin Cash Node](https://bitcoincashnode.org/) on a Raspberry Pi 4 running Ubuntu Desktop (64-bit). 
+This tutorial describes how to upgrade [Bitcoin Cash Node](https://bitcoincashnode.org/) on a Raspberry Pi 4 running Ubuntu Desktop (64-bit).
 
 You will occasionally need to upgrade your Bitcoin Cash Node to meet certain protocol requirements and feature updates.
 
