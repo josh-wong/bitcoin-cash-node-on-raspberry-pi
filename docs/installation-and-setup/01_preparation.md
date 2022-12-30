@@ -9,15 +9,19 @@ This tutorial assumes that you have already installed and configured Ubuntu Desk
 
 Before you proceed, let's make sure you're running the aarch64 version of Ubuntu on the Raspberry Pi. Run the following command in **Terminal**.
 
-`uname -m`
+```console
+uname -m
+```
 
-If **aarch64** is not output, please follow the instructions in How to install Ubuntu Desktop on Raspberry Pi 4 and make sure to select the 64-bit option of Ubuntu Desktop.
+If `aarch64` is not output, please follow the instructions in How to install Ubuntu Desktop on Raspberry Pi 4 and make sure to select the 64-bit option of Ubuntu Desktop.
 
 ## Update and upgrade your Raspberry Pi and Ubuntu
 
 After setting up Ubuntu Desktop and automounting your SSD, let's update and upgrade your Raspberry Pi and Ubuntu by running the following commands in **Terminal**.
 
-`sudo apt update && sudo apt upgrade -y`
+```console
+sudo apt update && sudo apt upgrade -y
+```
 
 Wait for updates and upgrades to install. If prompted, reboot your device and then proceed with this tutorial.
 
@@ -47,20 +51,26 @@ Turning off swap may or may not cause issues with starting Bitcoin Cash Node. Be
 
 First, let's check if swap is running by entering the following command in Terminal.
 
-`sudo swapon --show`
+```console
+sudo swapon --show
+```
 
 If Terminal replies with the path to the swap file and its size, then swap is on.
 
 To turn off swap and delete the file, run the following commands.
 
-`sudo swapoff -a`
-`sudo rm /swapfile`
-`sudo nano /etc/fstab`
+```console
+sudo swapoff -a
+sudo rm /swapfile
+sudo nano /etc/fstab
+```
 
-Delete the line that starts with "/swapfile".> /swap.img       none    swap    sw      0       0
+Delete the line that starts with `"/swapfile".> /swap.img       none    swap    sw      0       0`
 
 Confirm that the swap is off by running the following command.
 
-`sudo swapon --show`
+```console
+sudo swapon --show
+```
 
 Terminal should return no response. If Terminal returns a response, try turning off the swap again and rebooting your device.

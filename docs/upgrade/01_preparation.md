@@ -26,8 +26,12 @@ To close Bitcoin Cash Node, do one of the following:
 
 Now, let's update and upgrade Ubuntu Desktop by running the following command in Terminal.
 
-`sudo apt update && sudo apt upgrade -y`
+```console
+sudo apt update && sudo apt upgrade -y
+```
 
 Since we might have installed major updates and upgrades, let's reboot the device by running the following command in Terminal.
 
-`sudo reboot`
+```console
+sudo reboot
+```

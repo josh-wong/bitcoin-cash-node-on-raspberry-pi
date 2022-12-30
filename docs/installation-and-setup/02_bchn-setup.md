@@ -10,17 +10,23 @@ Make sure the latest version of BCHN is selected. Under **Linux**, download the 
 
 After the compressed package finishes downloading, let's extract the compressed package. 
 
-To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace **<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE\>** in the command below with the directory where we saved the compressed package to.
+To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace `<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE>` in the command below with the directory where we saved the compressed package to.
 
-`cd /<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE>`
+```console
+cd /<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE>
+```
 
-Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace **<VERSION-NUMBER-DOWNLOADED\>** with the version number that matches the package we downloaded.
+Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace `<VERSION-NUMBER-DOWNLOADED>` with the version number that matches the package we downloaded.
 
-`sudo tar -xvzf bitcoin-cash-node-<VERSION-NUMBER-DOWNLOADED>-aarch64-linux-gnu.tar.gz`
+```console
+sudo tar -xvzf bitcoin-cash-node-<VERSION-NUMBER-DOWNLOADED>-aarch64-linux-gnu.tar.gz
+```
 
 While we're in this directory, let's create a new directory to store the blockchain data and keep things tidy. In **Terminal**, run the following command.
 
-`mkdir blockchain-data`
+```console
+mkdir blockchain-data
+```
 
 ## Run Bitcoin Cash Node
 
@@ -30,9 +36,11 @@ Now that we've extracted the Bitcoin Cash Node package, let's run the software a
     
     Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.
 
-To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace **<VERSION-NUMBER-DOWNLOADED\>** with the version number that matches the package we downloaded.
+To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace `<VERSION-NUMBER-DOWNLOADED>` with the version number that matches the package we downloaded.
 
-`sudo bitcoin-cash-node-<VERSION-NUMBER-DOWNLOADED>/bin/bitcoin-qt`
+```console
+sudo bitcoin-cash-node-<VERSION-NUMBER-DOWNLOADED>/bin/bitcoin-qt
+```
 
 The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to. 
 
