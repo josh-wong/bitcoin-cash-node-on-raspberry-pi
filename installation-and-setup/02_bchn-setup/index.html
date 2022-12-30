@@ -1038,7 +1038,7 @@
 <p>Open a web browser on the Raspberry Pi, and go to the <strong><a href="https://bitcoincashnode.org/en/download.html">Download</a></strong> page on the Bitcoin Cash Node website.</p>
 <p>Make sure the latest version of BCHN is selected. Under <strong>Linux</strong>, download the <strong>AARCH 64 (tar)</strong> package to the home directory on our mounted SSD. Downloading this compressed package should take about 1 minute.</p>
 <p><img alt="Bitcoin Cash Node download screen" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_download.png?raw=true" /></p>
-<p>After the compressed package finishes downloading, let's extract the compressed package. </p>
+<p>After the compressed package finishes downloading, let's extract the compressed package.</p>
 <p>To do so, let's open <strong>Terminal</strong> and go to the directory where you downloaded the package to. Be sure to replace <code>&lt;SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE&gt;</code> in the command below with the directory where we saved the compressed package to.</p>
 <div class="highlight"><pre><span></span><code><span class="go">cd /&lt;SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE&gt;</span>
 </code></pre></div>
@@ -1057,7 +1057,7 @@
 <p>To start the Bitcoin Cash Node software, run the following command in <strong>Terminal</strong>. Be sure to replace <code>&lt;VERSION-NUMBER-DOWNLOADED&gt;</code> with the version number that matches the package we downloaded.</p>
 <div class="highlight"><pre><span></span><code><span class="go">sudo bitcoin-cash-node-&lt;VERSION-NUMBER-DOWNLOADED&gt;/bin/bitcoin-qt</span>
 </code></pre></div>
-<p>The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to. </p>
+<p>The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to.</p>
 <p>Under <strong>Use a custom data directory</strong>, click the <strong>three dots</strong> to choose a directory.</p>
 <p><img alt="Bitcoin Cash Node welcome screen" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_welcome_screen.png?raw=true" /></p>
 <p>Navigate to your SSD, select the directory named <strong>blockchain-data</strong> that you previously created, and click <strong>OK</strong>. Then, click <strong>OK</strong> to begin downloading the blockchain.</p>
@@ -1065,7 +1065,7 @@
 <p><img alt="Bitcoin Cash Node sync" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_sync.png?raw=true" /></p>
 <p>After all the Bitcoin Cash transactions have finished downloading to your SSD, you will see the following Overview screen and your node will automatically start verifying transactions on the Bitcoin Cash blockchain as they happen.</p>
 <p><img alt="Bitcoin Cash Node synced" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_synced.png?raw=true" /></p>
-<p>To monitor inbound and outbound traffic on your node, click <strong>Window</strong> in the menu bar and choose <strong>Network Traffic</strong>. From here, you can see how much data is being transferred to and from your node. </p>
+<p>To monitor inbound and outbound traffic on your node, click <strong>Window</strong> in the menu bar and choose <strong>Network Traffic</strong>. From here, you can see how much data is being transferred to and from your node.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The "Received" and "Sent" under "Totals" will reset if you restart the Bitcoin Cash Node software. Additionally, the network traffic will reset if you move the slider below the graph.</p>

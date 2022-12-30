@@ -155,7 +155,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#preparing-your-device" class="md-skip">
+        <a href="#preparing-our-device" class="md-skip">
           Skip to content
         </a>
       
@@ -492,10 +492,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-your-ubuntu-architecture" class="md-nav__link">
+  <a href="#check-our-ubuntu-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Check your Ubuntu architecture
+        Check our Ubuntu architecture
       
     </span>
   </a>
@@ -1022,10 +1022,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#check-your-ubuntu-architecture" class="md-nav__link">
+  <a href="#check-our-ubuntu-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Check your Ubuntu architecture
+        Check our Ubuntu architecture
       
     </span>
   </a>
@@ -1099,27 +1099,27 @@
   </a>
 
 
-<h1 id="preparing-your-device">Preparing your device<a class="headerlink" href="#preparing-your-device" title="Permanent link">&para;</a></h1>
-<p>This tutorial assumes that you have already installed and configured Ubuntu Desktop on your Raspberry Pi to your liking and have mounted the SSD to your Pi.</p>
+<h1 id="preparing-our-device">Preparing our device<a class="headerlink" href="#preparing-our-device" title="Permanent link">&para;</a></h1>
+<p>This tutorial assumes that we have already installed and configured Ubuntu Desktop on our Raspberry Pi to our liking and have mounted the SSD to our Raspberry Pi.</p>
 <ol>
 <li><strong>For details on installing Ubuntu Desktop (64-bit) on your Raspberry Pi</strong>, please see <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview">How to install Ubuntu Desktop on Raspberry Pi 4</a>.</li>
 <li><strong>For details on automounting your SSD in Ubuntu</strong>, please see <a href="https://www.techrepublic.com/article/how-to-properly-automount-a-drive-in-ubuntu-linux/">How to properly automount a drive in Ubuntu Linux</a>.</li>
 </ol>
-<h2 id="check-your-ubuntu-architecture">Check your Ubuntu architecture<a class="headerlink" href="#check-your-ubuntu-architecture" title="Permanent link">&para;</a></h2>
-<p>Before you proceed, let's make sure you're running the aarch64 version of Ubuntu on the Raspberry Pi. Run the following command in <strong>Terminal</strong>.</p>
+<h2 id="check-our-ubuntu-architecture">Check our Ubuntu architecture<a class="headerlink" href="#check-our-ubuntu-architecture" title="Permanent link">&para;</a></h2>
+<p>Before we proceed, let's make sure we're running the aarch64 version of Ubuntu on our Raspberry Pi. Run the following command in <strong>Terminal</strong>.</p>
 <div class="highlight"><pre><span></span><code><span class="go">uname -m</span>
 </code></pre></div>
-<p>If <code>aarch64</code> is not output, please follow the instructions in How to install Ubuntu Desktop on Raspberry Pi 4 and make sure to select the 64-bit option of Ubuntu Desktop.</p>
+<p>If <code>aarch64</code> is not output, please follow the instructions in <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview">How to install Ubuntu Desktop on Raspberry Pi 4</a> and make sure to select the 64-bit option of Ubuntu Desktop.</p>
 <h2 id="update-and-upgrade-your-raspberry-pi-and-ubuntu">Update and upgrade your Raspberry Pi and Ubuntu<a class="headerlink" href="#update-and-upgrade-your-raspberry-pi-and-ubuntu" title="Permanent link">&para;</a></h2>
 <p>After setting up Ubuntu Desktop and automounting your SSD, let's update and upgrade your Raspberry Pi and Ubuntu by running the following commands in <strong>Terminal</strong>.</p>
 <div class="highlight"><pre><span></span><code><span class="go">sudo apt update &amp;&amp; sudo apt upgrade -y</span>
 </code></pre></div>
 <p>Wait for updates and upgrades to install. If prompted, reboot your device and then proceed with this tutorial.</p>
 <h2 id="set-a-static-ip-address">Set a static IP address<a class="headerlink" href="#set-a-static-ip-address" title="Permanent link">&para;</a></h2>
-<p>We need to configure a static IP address and then set up port forwarding so that our Raspberry Pi can continue to communicate with other nodes even if we reboot the device. </p>
+<p>We need to configure a static IP address and then set up port forwarding so that our Raspberry Pi can continue to communicate with other nodes even if we reboot the device.</p>
 <p>For instructions on how to set a static IP address in Ubuntu, see Method 1 (command line) or Method 2 (GUI) in <a href="https://itsfoss.com/static-ip-ubuntu/">How to Assign Static IP Address on Ubuntu Linux</a>.</p>
 <h2 id="allow-connections-to-port-8333">Allow connections to port 8333<a class="headerlink" href="#allow-connections-to-port-8333" title="Permanent link">&para;</a></h2>
-<p>In our router, we need to allow connections to port 8333. This is the port that allows the node to sync properly. </p>
+<p>In our router, we need to allow connections to port 8333. This is the port that allows the node to sync properly.</p>
 <p>For details on how to allow port forwarding, please consult your router's manual. You typically need to include your device's static IP address and the port number (8333) in the Port Forwarding or NAT Forwarding setting, depending on your router.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>

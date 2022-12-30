@@ -720,10 +720,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#move-the-wallet-file-we-previously-backed-up" class="md-nav__link">
+  <a href="#optional-if-your-wallet-does-not-appear-in-your-blockchain-data-directory" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Move the wallet file we previously backed up
+        Optional: If your wallet does not appear in your blockchain data directory
       
     </span>
   </a>
@@ -1044,10 +1044,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#move-the-wallet-file-we-previously-backed-up" class="md-nav__link">
+  <a href="#optional-if-your-wallet-does-not-appear-in-your-blockchain-data-directory" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Move the wallet file we previously backed up
+        Optional: If your wallet does not appear in your blockchain data directory
       
     </span>
   </a>
@@ -1131,7 +1131,11 @@
 </ul>
 <div class="highlight"><pre><span></span><code><span class="go">sudo mv bitcoin-cash-node-&lt;OLD-VERSION-NUMBER&gt;/&lt;BLOCKCHAIN-DATA-DIRECTORY&gt; bitcoin-cash-node-&lt;NEW-VERSION-NUMBER&gt;</span>
 </code></pre></div>
-<h2 id="move-the-wallet-file-we-previously-backed-up">Move the wallet file we previously backed up<a class="headerlink" href="#move-the-wallet-file-we-previously-backed-up" title="Permanent link">&para;</a></h2>
+<h2 id="optional-if-your-wallet-does-not-appear-in-your-blockchain-data-directory">Optional: If your wallet does not appear in your blockchain data directory<a class="headerlink" href="#optional-if-your-wallet-does-not-appear-in-your-blockchain-data-directory" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This step is only necessary if you cannot find your wallet (.dat) in your blockchain data directory. In this case, you can add your wallet, which you previously backed up in <a href="../01_preparation/#optional-back-up-our-bitcoin-cash-wallet">Optional: Back up our Bitcoin Cash wallet</a>.</p>
+</div>
 <p>Let's move the wallet file (.dat) that we backed up earlier into the directory of the newer version of Bitcoin Cash Node.</p>
 <p>In <strong>Terminal</strong>, run the following command. Be sure to:</p>
 <ul>
@@ -1148,20 +1152,20 @@
 </code></pre></div>
 <p>You will be greeted with a <strong>Welcome</strong> window. The directory shown here will likely be pointing to the previous directory, which we've moved to the newer Bitcoin Cash Node directory.
 <img alt="Bitcoin Cash Node welcome screen" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_welcome.png?raw=true" /></p>
-<p>Under <strong>Use a custom data directory</strong>, click the <strong>three dots</strong> to choose a different directory. The <strong>Choose data directory</strong> window will be displayed. </p>
-<p>Go to the newer Bitcoin Cash Node directory, select the directory that contains the blockchain data that we moved earlier, and click <strong>Choose</strong>. As mentioned earlier, you can see my directory name is "blockchain-data". 
+<p>Under <strong>Use a custom data directory</strong>, click the <strong>three dots</strong> to choose a different directory. The <strong>Choose data directory</strong> window will be displayed.</p>
+<p>Go to the newer Bitcoin Cash Node directory, select the directory that contains the blockchain data that we moved earlier, and click <strong>Choose</strong>. As mentioned earlier, you can see my directory name is "blockchain-data".
 <img alt="Change Bitcoin Cash Node blockchain directory" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_welcome_change_directory.png?raw=true" /></p>
-<p>On the <strong>Welcome</strong> window, click <strong>OK</strong>. </p>
+<p>On the <strong>Welcome</strong> window, click <strong>OK</strong>.</p>
 <p>Since our node was down for a while, our device will start downloading the Bitcoin Cash transactions that we have missed.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The time necessary for downloading the missing transactions will vary depending on how long the node was not running.</p>
 </div>
-<p>After the device has finished downloading transactions, the main window of the Bitcoin Cash Node GUI will be displayed. </p>
+<p>After the device has finished downloading transactions, the main window of the Bitcoin Cash Node GUI will be displayed.</p>
 <h2 id="confirm-bitcoin-cash-node-version">Confirm Bitcoin Cash Node version<a class="headerlink" href="#confirm-bitcoin-cash-node-version" title="Permanent link">&para;</a></h2>
-<p>To confirm which version of Bitcoin Cash Node we are running, click <strong>Help</strong> and select <strong>About Bitcoin Cash Node</strong>. 
+<p>To confirm which version of Bitcoin Cash Node we are running, click <strong>Help</strong> and select <strong>About Bitcoin Cash Node</strong>.
 <img alt="About Bitcoin Cash Node" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_help_about.png?raw=true" /></p>
-<p>Our version will be displayed on the window that appears. 
+<p>Our version will be displayed on the window that appears.
 <img alt="About Bitcoin Cash Node" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_about.png?raw=true" /></p>
 
   

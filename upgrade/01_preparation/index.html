@@ -155,7 +155,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#preparing-your-device" class="md-skip">
+        <a href="#preparing-our-device" class="md-skip">
           Skip to content
         </a>
       
@@ -672,10 +672,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#back-up-our-bitcoin-cash-wallet" class="md-nav__link">
+  <a href="#optional-back-up-your-bitcoin-cash-wallet" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Back up our Bitcoin Cash wallet
+        Optional: Back up your Bitcoin Cash wallet
       
     </span>
   </a>
@@ -989,10 +989,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#back-up-our-bitcoin-cash-wallet" class="md-nav__link">
+  <a href="#optional-back-up-your-bitcoin-cash-wallet" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Back up our Bitcoin Cash wallet
+        Optional: Back up your Bitcoin Cash wallet
       
     </span>
   </a>
@@ -1033,12 +1033,16 @@
   </a>
 
 
-<h1 id="preparing-your-device">Preparing your device<a class="headerlink" href="#preparing-your-device" title="Permanent link">&para;</a></h1>
+<h1 id="preparing-our-device">Preparing our device<a class="headerlink" href="#preparing-our-device" title="Permanent link">&para;</a></h1>
 <p>Before upgrading Bitcoin Cash Node, we should back up our wallet (in the .dat file format) and update our device. This will help ensure a smooth upgrade process.</p>
-<h2 id="back-up-our-bitcoin-cash-wallet">Back up our Bitcoin Cash wallet<a class="headerlink" href="#back-up-our-bitcoin-cash-wallet" title="Permanent link">&para;</a></h2>
-<p>In the <strong>Bitcoin Cash Node application</strong>, click <strong>File</strong> and choose <strong>Back up wallet</strong>. 
+<h2 id="optional-back-up-your-bitcoin-cash-wallet">Optional: Back up your Bitcoin Cash wallet<a class="headerlink" href="#optional-back-up-your-bitcoin-cash-wallet" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This step is optional since you will be moving your blockchain data, which includes your wallet, from the old Bitcoin Cash Node directory into a new directory. However, temporarily backing up your wallet is still recommended just in case you encounter an issue during the upgrade.</p>
+</div>
+<p>In the <strong>Bitcoin Cash Node application</strong>, click <strong>File</strong> and choose <strong>Back up wallet</strong>.
 <img alt="Back up Bitcoin Cash wallet" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_wallet_backup.png?raw=true" /></p>
-<p>Then, let's choose a directory to save our wallet backup. 
+<p>Then, let's choose a directory to save our wallet backup.
 <img alt="Save Bitcoin Cash wallet backup" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_wallet_backup_save.png?raw=true" /></p>
 <p>Our wallet will be saved in the directory we chose. We will be moving this wallet file to the newer version of Bitcoin Cash Node later, so remember where we saved this wallet backup file.</p>
 <h2 id="update-and-upgrade-ubuntu-desktop">Update and upgrade Ubuntu Desktop<a class="headerlink" href="#update-and-upgrade-ubuntu-desktop" title="Permanent link">&para;</a></h2>
@@ -1046,11 +1050,11 @@
 <p>To close Bitcoin Cash Node, do one of the following:</p>
 <ul>
 <li>
-<p><strong>To close the application from the graphical user interface (GUI):</strong> Click <strong>File</strong>, then choose <strong>Exit</strong>. 
+<p><strong>To close the application from the graphical user interface (GUI):</strong> Click <strong>File</strong>, then choose <strong>Exit</strong>.
 <img alt="GUI - Close Bitcoin Cash" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_close_gui.png?raw=true" /></p>
 </li>
 <li>
-<p><strong>To close the application from Terminal (if that is where you ran Bitcoin Cash Node):</strong> Press <strong>Ctrl + C</strong> on the keyboard. 
+<p><strong>To close the application from Terminal (if that is where you ran Bitcoin Cash Node):</strong> Press <strong>Ctrl + C</strong> on the keyboard.
 <img alt="Terminal - Close Bitcoin Cash Node" src="https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_close_terminal.png?raw=true" /></p>
 </li>
 </ul>
