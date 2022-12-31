@@ -39,38 +39,14 @@ For details on how to allow port forwarding, please consult your router's manual
 
 !!! warning
     
-    If you don't configure a static IP address, you may cause connection issues when you restart or reboot your Raspberry Pi. By setting a static IP address, we can make sure the same IP address is still allowing communication from port 8333.
+    If you don't configure a static IP address, you may encounter connection issues when you restart or reboot your Raspberry Pi. By setting a static IP address, you can make sure the same IP address is still allowing communication from port 8333.
 
-## Turn off swap
+## Turn on swap
 
-Turning off swap may or may not cause issues with starting Bitcoin Cash Node. Because of this, we should turn off swap.
+We need our Bitcoin Cash Node to continue running if the RAM on our Raspberry Pi gets full. To address this, we need to enable swap on our device.
+
+For instructions on how to check if swap is enabled and configure swap appropriately, see [How to Add Swap Space on Ubuntu 20.04](https://www.cloudbooklet.com/how-to-add-swap-space-on-ubuntu-20-04/).
 
 !!! note
     
-    You can experiment with this as necessary, but there may be issues with the Raspberry Pi becoming unresponsive when swap is turned on.
-
-First, let's check if swap is running by entering the following command in Terminal.
-
-```console
-sudo swapon --show
-```
-
-If Terminal replies with the path to the swap file and its size, then swap is on.
-
-To turn off swap and delete the file, run the following commands.
-
-```console
-sudo swapoff -a
-sudo rm /swapfile
-sudo nano /etc/fstab
-```
-
-Delete the line that starts with `"/swapfile".> /swap.img       none    swap    sw      0       0`
-
-Confirm that the swap is off by running the following command.
-
-```console
-sudo swapon --show
-```
-
-Terminal should return no response. If Terminal returns a response, try turning off the swap again and rebooting your device.
+    You can experiment with this as necessary, but the Raspberry Pi might become unresponsive if swap is turned off or does not have enough RAM allocated.
