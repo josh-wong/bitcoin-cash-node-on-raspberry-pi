@@ -536,10 +536,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#turn-off-swap" class="md-nav__link">
+  <a href="#turn-on-swap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Turn off swap
+        Turn on swap
       
     </span>
   </a>
@@ -1066,10 +1066,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#turn-off-swap" class="md-nav__link">
+  <a href="#turn-on-swap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Turn off swap
+        Turn on swap
       
     </span>
   </a>
@@ -1123,28 +1123,15 @@
 <p>For details on how to allow port forwarding, please consult your router's manual. You typically need to include your device's static IP address and the port number (8333) in the Port Forwarding or NAT Forwarding setting, depending on your router.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If you don't configure a static IP address, you may cause connection issues when you restart or reboot your Raspberry Pi. By setting a static IP address, we can make sure the same IP address is still allowing communication from port 8333.</p>
+<p>If you don't configure a static IP address, you may encounter connection issues when you restart or reboot your Raspberry Pi. By setting a static IP address, you can make sure the same IP address is still allowing communication from port 8333.</p>
 </div>
-<h2 id="turn-off-swap">Turn off swap<a class="headerlink" href="#turn-off-swap" title="Permanent link">&para;</a></h2>
-<p>Turning off swap may or may not cause issues with starting Bitcoin Cash Node. Because of this, we should turn off swap.</p>
+<h2 id="turn-on-swap">Turn on swap<a class="headerlink" href="#turn-on-swap" title="Permanent link">&para;</a></h2>
+<p>We need our Bitcoin Cash Node to continue running if the RAM on our Raspberry Pi gets full. To address this, we need to enable swap on our device.</p>
+<p>For instructions on how to check if swap is enabled and configure swap appropriately, see <a href="https://www.cloudbooklet.com/how-to-add-swap-space-on-ubuntu-20-04/">How to Add Swap Space on Ubuntu 20.04</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can experiment with this as necessary, but there may be issues with the Raspberry Pi becoming unresponsive when swap is turned on.</p>
+<p>You can experiment with this as necessary, but the Raspberry Pi might become unresponsive if swap is turned off or does not have enough RAM allocated.</p>
 </div>
-<p>First, let's check if swap is running by entering the following command in Terminal.</p>
-<div class="highlight"><pre><span></span><code><span class="go">sudo swapon --show</span>
-</code></pre></div>
-<p>If Terminal replies with the path to the swap file and its size, then swap is on.</p>
-<p>To turn off swap and delete the file, run the following commands.</p>
-<div class="highlight"><pre><span></span><code><span class="go">sudo swapoff -a</span>
-<span class="go">sudo rm /swapfile</span>
-<span class="go">sudo nano /etc/fstab</span>
-</code></pre></div>
-<p>Delete the line that starts with <code>"/swapfile".&gt; /swap.img       none    swap    sw      0       0</code></p>
-<p>Confirm that the swap is off by running the following command.</p>
-<div class="highlight"><pre><span></span><code><span class="go">sudo swapon --show</span>
-</code></pre></div>
-<p>Terminal should return no response. If Terminal returns a response, try turning off the swap again and rebooting your device.</p>
 
   
     
@@ -1158,7 +1145,7 @@
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 30, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 31, 2022</span>
       </span>
     
     
