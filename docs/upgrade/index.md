@@ -10,4 +10,4 @@ These instructions are intended for those who have basic knowledge of the Ubuntu
 
 ## Prerequisites
 
-This upgrade tutorial assumes that you are already running a previous version of Bitcoin Cash Node on Ubuntu Desktop.
+This upgrade tutorial assumes that you are already running a previous version of Bitcoin Cash Node on Ubuntu Desktop. For instructions on how to set up Bitcoin Cash Node, see [How to install and configure Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop](../installation-and-setup/).
