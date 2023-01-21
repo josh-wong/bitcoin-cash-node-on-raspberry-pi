@@ -1,4 +1,4 @@
-# Getting started
+# How to install and configure Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop
 
 This tutorial describes how to install and set up [Bitcoin Cash Node](https://bitcoincashnode.org/) on a Raspberry Pi 4 running Ubuntu Desktop (64-bit). We will focus on using the Bitcoin Cash Node graphical user interface (GUI) so that you can visualize processes on the blockchain and your Bitcoin Cash wallet transactions.
 
