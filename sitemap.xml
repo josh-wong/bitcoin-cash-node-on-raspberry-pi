@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://josh-wong.github.io/bcn/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/contributions/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/contributions/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/references/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/references/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/test/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/test/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/installation-and-setup/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/installation-and-setup/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/installation-and-setup/01_preparation/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/installation-and-setup/01_preparation/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/installation-and-setup/02_bchn-setup/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/installation-and-setup/02_bchn-setup/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/installation-and-setup/03_wallet-setup/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/installation-and-setup/03_wallet-setup/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/installation-and-setup/04_conclusion/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/installation-and-setup/04_conclusion/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/upgrade/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/upgrade/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/upgrade/01_preparation/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/upgrade/01_preparation/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/upgrade/02_bchn-upgrade/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/upgrade/02_bchn-upgrade/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/upgrade/03_cleanup/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/upgrade/03_cleanup/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://josh-wong.github.io/bcn/upgrade/04_conclusion/</loc>
+         <loc>https://josh-wong.github.io/bitcoin-cash-node-on-raspberry-pi/upgrade/04_conclusion/</loc>
          <lastmod>2023-05-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
