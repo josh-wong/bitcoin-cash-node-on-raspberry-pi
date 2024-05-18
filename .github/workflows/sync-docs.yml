@@ -25,7 +25,7 @@ jobs:
         with:
           source_file: "docs/"
           destination_repo: "josh-wong/josh-wong.github.io"
-          destination_folder: docs/bitcoin-cash-node-on-raspberry-pi/
+          destination_folder: docs/portfolio/personal/bitcoin-cash-node-on-raspberry-pi/
           destination_branch_create: "bitcoin-cash-node-on-raspberry-pi/update-docs"
           user_name: "josh-wong"
           user_email: "joshuarwong@gmail.com"
