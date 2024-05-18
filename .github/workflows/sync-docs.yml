@@ -1,0 +1,33 @@
+# Workflow for syncing docs from this repository to the `josh-wong/josh-wong.github.io` repository
+name: 🔄 Sync versioned docs to my personal site repo
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - docs/**
+      - '!docs/stylesheets/**'
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 1 * * 1,4' # Run at 1:00 AM Universal Time Coordinated (UTC) / 10:00 AM Japan Standard Time (JST) on Mondays and Thursdays.
+
+jobs:
+  docs-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Push updated contents in the `docs` folder to the `josh-wong/josh-wong.github.io` repo
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.SYNC_DOCS_PAT }}
+        with:
+          source_file: "docs/"
+          destination_repo: "josh-wong/josh-wong.github.io"
+          destination_folder: docs/bitcoin-cash-node-on-raspberry-pi/
+          destination_branch_create: "bitcoin-cash-node-on-raspberry-pi/update-docs"
+          user_name: "josh-wong"
+          user_email: "joshuarwong@gmail.com"
+          commit_message: "AUTO: Sync BCHN on Raspberry Pi docs to personal site"
+          use_rsync: rsync -avh
