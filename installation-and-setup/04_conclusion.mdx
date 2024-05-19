@@ -1,0 +1,11 @@
+# Conclusion
+
+You have now finished setting up Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop.
+
+By running a full node, you:
+
+- Contribute to the Bitcoin Cash network and community by validating transactions.
+- Promote the security and decentralization of Bitcoin Cash.
+- Have control over your Bitcoin Cash in a wallet that you own.
+
+You're all set to contribute to the health of a true, peer-to-peer digital currency!
