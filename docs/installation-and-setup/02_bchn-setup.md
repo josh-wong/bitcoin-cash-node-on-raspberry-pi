@@ -10,16 +10,16 @@ Make sure the latest version of BCHN is selected. Under **Linux**, download the 
 
 After the compressed package finishes downloading, let's extract the compressed package.
 
-To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace `<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE>` in the command below with the directory where we saved the compressed package to.
+To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace `<SSD_DIRECTORY_CONTAINING_DOWNLOADED_PACKAGE>` in the command below with the directory where we saved the compressed package to.
 
 ```console
-cd /<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE>
+cd /<SSD_DIRECTORY_CONTAINING_DOWNLOADED_PACKAGE>
 ```
 
-Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace `<VERSION-NUMBER-DOWNLOADED>` with the version number that matches the package we downloaded.
+Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace `<VERSION_NUMBER_DOWNLOADED>` with the version number that matches the package we downloaded.
 
 ```console
-sudo tar -xvzf bitcoin-cash-node-<VERSION-NUMBER-DOWNLOADED>-aarch64-linux-gnu.tar.gz
+sudo tar -xvzf bitcoin-cash-node-<VERSION_NUMBER_DOWNLOADED>-aarch64-linux-gnu.tar.gz
 ```
 
 While we're in this directory, let's create a new directory to store the blockchain data and keep things tidy. In **Terminal**, run the following command.
@@ -32,14 +32,16 @@ mkdir blockchain-data
 
 Now that we've extracted the Bitcoin Cash Node package, let's run the software and start downloading the blockchain transactions to our node.
 
-!!! note
-    
-    Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.
+:::note
 
-To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace `<VERSION-NUMBER-DOWNLOADED>` with the version number that matches the package we downloaded.
+Downloading all the transactions in the blockchain will take a while. You may want to start the Bitcoin Cash Node software a couple hours before going to bed, as you may experience a slow Internet connection.
+
+:::
+
+To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace `<VERSION_NUMBER_DOWNLOADED>` with the version number that matches the package we downloaded.
 
 ```console
-sudo bitcoin-cash-node-<VERSION-NUMBER-DOWNLOADED>/bin/bitcoin-qt
+sudo bitcoin-cash-node-<VERSION_NUMBER_DOWNLOADED>/bin/bitcoin-qt
 ```
 
 The Bitcoin Cash Node software then prompts us to specify where to download the blockchain transactions to.
@@ -60,8 +62,10 @@ After all the Bitcoin Cash transactions have finished downloading to your SSD, y
 
 To monitor inbound and outbound traffic on your node, click **Window** in the menu bar and choose **Network Traffic**. From here, you can see how much data is being transferred to and from your node.
 
-!!! note
-    
-    The "Received" and "Sent" under "Totals" will reset if you restart the Bitcoin Cash Node software. Additionally, the network traffic will reset if you move the slider below the graph.
+:::note
+
+The "Received" and "Sent" under "Totals" will reset if you restart the Bitcoin Cash Node software. Additionally, the network traffic will reset if you move the slider below the graph.
+
+:::
 
 ![Bitcoin Cash Node network traffic 30 minutes](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/bitcoin_cash_node_network_traffic_30_minutes.png?raw=true)

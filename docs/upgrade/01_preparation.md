@@ -4,9 +4,11 @@ Before upgrading Bitcoin Cash Node, we should back up our wallet (in the .dat fi
 
 ## Optional: Back up your Bitcoin Cash wallet
 
-!!! warning
-    
-    This step is optional since you will be moving your blockchain data, which includes your wallet, from the old Bitcoin Cash Node directory into a new directory. However, temporarily backing up your wallet is still recommended just in case you encounter an issue during the upgrade.
+:::warning
+
+This step is optional since you will be moving your blockchain data, which includes your wallet, from the old Bitcoin Cash Node directory into a new directory. However, temporarily backing up your wallet is still recommended just in case you encounter an issue during the upgrade.
+
+:::
 
 In the **Bitcoin Cash Node application**, click **File** and choose **Back up wallet**.
 ![Back up Bitcoin Cash wallet](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi/blob/main/docs/assets/screenshots/upgrade_bitcoin_cash_node_wallet_backup.png?raw=true)

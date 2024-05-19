@@ -10,29 +10,29 @@ Make sure the latest version of BCHN is selected. Under **Linux**, download the 
 
 After the compressed package finishes downloading, let's move the compressed file to the SSD. To do so, open **Terminal** and run the following command. Be sure to:
 
-- Replace `<NEW-VERSION-NUMBER>` with the version number that matches the package we just downloaded.
-- Replace `<SSD-DIRECTORY>` with the name of our SSD drive where the current Bitcoin Cash Node lives.
+- Replace `<NEW_VERSION_NUMBER>` with the version number that matches the package we just downloaded.
+- Replace `<SSD_DIRECTORY>` with the name of our SSD drive where the current Bitcoin Cash Node lives.
 
 ```console
-sudo mv Downloads/bitcoin-cash-node-<NEW-VERSION-NUMBER>-aarch64-linux-gnu.tar.gz /<SSD-DIRECTORY>
+sudo mv Downloads/bitcoin-cash-node-<NEW_VERSION_NUMBER>-aarch64-linux-gnu.tar.gz /<SSD_DIRECTORY>
 ```
 
-Next, let's go to the SSD directory by running the following command. Be sure to replace `<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE>` in the command below with the directory where we saved the compressed package to.
+Next, let's go to the SSD directory by running the following command. Be sure to replace `<SSD_DIRECTORY_CONTAINING_DOWNLOADED_PACKAGE>` in the command below with the directory where we saved the compressed package to.
 
  ```console
- cd /<SSD-DIRECTORY-CONTAINING-DOWNLOADED-PACKAGE>
+ cd /<SSD_DIRECTORY_CONTAINING_DOWNLOADED_PACKAGE>
  ```
 
-Now, let's extract the compressed package. Let's open **Terminal** and run the following command. Be sure to replace `<NEW-VERSION-NUMBER`> with the version number that matches the package we downloaded.
+Now, let's extract the compressed package. Let's open **Terminal** and run the following command. Be sure to replace `<NEW_VERSION_NUMBER`> with the version number that matches the package we downloaded.
 
 ```console
-sudo tar -xvzf bitcoin-cash-node-<NEW-VERSION-NUMBER>-aarch64-linux-gnu.tar.gz
+sudo tar -xvzf bitcoin-cash-node-<NEW_VERSION_NUMBER>-aarch64-linux-gnu.tar.gz
 ```
 
-The files from the newer version of Bitcoin Cash Node will be extracted to the SSD. We don't need the compressed package anymore, so let's remove it by running the following command in **Terminal**. Be sure to replace `<NEW-VERSION-NUMBER>` with the version number that matches the package we downloaded.
+The files from the newer version of Bitcoin Cash Node will be extracted to the SSD. We don't need the compressed package anymore, so let's remove it by running the following command in **Terminal**. Be sure to replace `<NEW_VERSION_NUMBER>` with the version number that matches the package we downloaded.
 
 ```console
-sudo rm bitcoin-cash-node-<NEW-VERSION-NUMBER>-aarch64-linux-gnu.tar.gz
+sudo rm bitcoin-cash-node-<NEW_VERSION_NUMBER>-aarch64-linux-gnu.tar.gz
 ```
 
 Now that we have our new Bitcoin Cash Node files extracted, let's move the blockchain data to the upgraded version of the Bitcoin Cash Node.
@@ -43,40 +43,42 @@ Since we've already been running Bitcoin Cash Node on an earlier version, we don
 
 Let's move the blockchain data from our previous installation to the newer version of Bitcoin Cash Node by running the following command. Be sure to:
 
-- Replace `<OLD-VERSION-NUMBER>` with the version number of our previous Bitcoin Cash Node installation.
-- Replace `<BLOCKCHAIN-DATA-DIRECTORY>` with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation. For example, I had previously named my directory "blockchain-data".
-- Replace `<NEW-VERSION-NUMBER>` with the version number that matches the package we downloaded earlier.
+- Replace `<OLD_VERSION_NUMBER>` with the version number of our previous Bitcoin Cash Node installation.
+- Replace `<BLOCKCHAIN_DATA_DIRECTORY>` with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation. For example, I had previously named my directory "blockchain-data".
+- Replace `<NEW_VERSION_NUMBER>` with the version number that matches the package we downloaded earlier.
 
 ```console
-sudo mv bitcoin-cash-node-<OLD-VERSION-NUMBER>/<BLOCKCHAIN-DATA-DIRECTORY> bitcoin-cash-node-<NEW-VERSION-NUMBER>
+sudo mv bitcoin-cash-node-<OLD_VERSION_NUMBER>/<BLOCKCHAIN_DATA_DIRECTORY> bitcoin-cash-node-<NEW_VERSION_NUMBER>
 ```
 
 ## Optional: If your wallet does not appear in your blockchain data directory
 
-!!! note
-    
-    This step is only necessary if you cannot find your wallet (.dat) in your blockchain data directory. In this case, you can add your wallet, which you previously backed up in [Optional: Back up our Bitcoin Cash wallet](../01_preparation/#optional-back-up-our-bitcoin-cash-wallet).
+:::note
+
+This step is only necessary if you cannot find your wallet (.dat) in your blockchain data directory. In this case, you can add your wallet, which you previously backed up in [Optional: Back up our Bitcoin Cash wallet](../01_preparation/#optional-back-up-our-bitcoin-cash-wallet).
+
+:::
 
 Let's move the wallet file (.dat) that we backed up earlier into the directory of the newer version of Bitcoin Cash Node.
 
 In **Terminal**, run the following command. Be sure to:
 
-- Replace `<WALLET-BACKUP-DIRECTORY>` with the name of the directory where we saved the wallet backup file to earlier.
-- Replace `<NEW-VERSION-NUMBER>` with the version number of our new Bitcoin Cash Node installation.
-- Replace `<BLOCKCHAIN-DATA-DIRECTORY>` with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation.
+- Replace `<WALLET_BACKUP_DIRECTORY>` with the name of the directory where we saved the wallet backup file to earlier.
+- Replace `<NEW_VERSION_NUMBER>` with the version number of our new Bitcoin Cash Node installation.
+- Replace `<BLOCKCHAIN_DATA_DIRECTORY>` with the name of our directory containing the downloaded blockchain data in our previous Bitcoin Cash Node installation.
 
 ```console
-sudo mv <WALLET-BACKUP-DIRECTORY> bitcoin-cash-node-<NEW-VERSION-NUMBER>/<BLOCKCHAIN-DATA-DIRECTORY>
+sudo mv <WALLET_BACKUP_DIRECTORY> bitcoin-cash-node-<NEW_VERSION_NUMBER>/<BLOCKCHAIN_DATA_DIRECTORY>
 ```
 
 ## Run the newer version of Bitcoin Cash Node
 
 Now that we've moved the blockchain data to the newer version of Bitcoin Cash Node, let's run the software. 
 
-To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace `<NEW-VERSION-NUMBER>` with the version number that matches the package you downloaded.
+To start the Bitcoin Cash Node software, run the following command in **Terminal**. Be sure to replace `<NEW_VERSION_NUMBER>` with the version number that matches the package you downloaded.
 
 ```console
-sudo bitcoin-cash-node-<NEW-VERSION-NUMBER>/bin/bitcoin-qt
+sudo bitcoin-cash-node-<NEW_VERSION_NUMBER>/bin/bitcoin-qt
 ```
 
 You will be greeted with a **Welcome** window. The directory shown here will likely be pointing to the previous directory, which we've moved to the newer Bitcoin Cash Node directory.
@@ -91,9 +93,11 @@ On the **Welcome** window, click **OK**.
 
 Since our node was down for a while, our device will start downloading the Bitcoin Cash transactions that we have missed.
 
-!!! note
-    
-    The time necessary for downloading the missing transactions will vary depending on how long the node was not running.
+:::note
+
+The time necessary for downloading the missing transactions will vary depending on how long the node was not running.
+
+:::
 
 After the device has finished downloading transactions, the main window of the Bitcoin Cash Node GUI will be displayed.
 

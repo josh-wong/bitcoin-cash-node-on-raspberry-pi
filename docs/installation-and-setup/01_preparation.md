@@ -37,9 +37,11 @@ In our router, we need to allow connections to port 8333. This is the port that 
 
 For details on how to allow port forwarding, please consult your router's manual. You typically need to include your device's static IP address and the port number (8333) in the Port Forwarding or NAT Forwarding setting, depending on your router.
 
-!!! warning
-    
-    If you don't configure a static IP address, you may encounter connection issues when you restart or reboot your Raspberry Pi. By setting a static IP address, you can make sure the same IP address is still allowing communication from port 8333.
+:::warning
+
+If you don't configure a static IP address, you may encounter connection issues when you restart or reboot your Raspberry Pi. By setting a static IP address, you can make sure the same IP address is still allowing communication from port 8333.
+
+:::
 
 ## Turn on swap
 
@@ -47,6 +49,8 @@ We need our Bitcoin Cash Node to continue running if the RAM on our Raspberry Pi
 
 For instructions on how to check if swap is enabled and configure swap appropriately, see [How to Add Swap Space on Ubuntu 20.04](https://www.cloudbooklet.com/how-to-add-swap-space-on-ubuntu-20-04/).
 
-!!! note
-    
-    You can experiment with this as necessary, but the Raspberry Pi might become unresponsive if swap is turned off or does not have enough RAM allocated.
+:::note
+
+You can experiment with this as necessary, but the Raspberry Pi might become unresponsive if swap is turned off or does not have enough RAM allocated.
+
+:::
