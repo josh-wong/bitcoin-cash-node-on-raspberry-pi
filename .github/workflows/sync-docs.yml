@@ -7,7 +7,6 @@ on:
       - "main"
     paths:
       - docs/**
-      - '!docs/stylesheets/**'
   workflow_dispatch:
   # schedule:
   #   - cron: '0 1 * * 1,4' # Run at 1:00 AM Universal Time Coordinated (UTC) / 10:00 AM Japan Standard Time (JST) on Mondays and Thursdays.
