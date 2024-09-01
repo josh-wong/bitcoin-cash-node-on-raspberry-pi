@@ -1,0 +1,81 @@
+name: PR checklist checker
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check-checklist:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # Wait 15 seconds so that the job doesn't run immediately when checking off multiple items in the checklist.
+    # - name: Wait for 15 seconds
+    #   run: |
+    #     sleep 15
+
+    - name: Check checklist in PR description
+      id: check_checklist
+      run: |
+        DESCRIPTION=$(jq -r .pull_request.body < $GITHUB_EVENT_PATH)
+        UNCHECKED_ITEMS=$(echo "$DESCRIPTION" | grep -o '.*\[ \].*' || true)
+        if [ -z "$UNCHECKED_ITEMS" ]; then
+          echo "all_checked=true" >> $GITHUB_ENV
+        else
+          echo "all_checked=false" >> $GITHUB_ENV
+          echo "unchecked_items<<EOF" >> $GITHUB_ENV
+          echo "$UNCHECKED_ITEMS" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+        fi
+
+    - name: Debug PR body
+      run: |
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }} | jq -r '.body'
+
+    - name: Leave a comment
+      if: env.all_checked == 'true'
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: "All items in the checklist have been checked🎉"
+          })
+
+    - name: Leave a comment with unchecked items
+      if: env.all_checked == 'false'
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const { data: pullRequest } = await github.rest.pulls.get({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: context.issue.number
+          });
+          const assignee = pullRequest.assignee ? `@${pullRequest.assignee.login}` : 'No assignee';
+          const uncheckedItems = process.env.unchecked_items.split('\n').map(item => `- ${item}`).join('\n');
+          const prLink = `https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${context.issue.number}`;
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `${assignee} Not all items in the checklist have been checked👀\n\nPlease review the unchecked items in the [PR description](${prLink}#checklist).`
+          })
+
+    - name: Fail the job if not all items are checked
+      if: env.all_checked == 'false'
+      run: |
+        echo "Failing the job because not all items in the checklist have been checked."
+        exit 1
